@@ -1,0 +1,3403 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- CSS only -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="lodash.js"></script>
+
+    <script src="sorttable.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+
+    <script src="jquery.js"></script> 
+    <script> 
+    $(function(){
+      $("#DivContent").load("data.html"); 
+    });
+    </script> 
+
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<!-- <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.css"> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!-- <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.js"></script> -->
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
+<link href="scss/bootstrap.min.css" rel="stylesheet">
+<!-- <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script> -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-75271964-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-75271964-1');
+    </script>
+
+
+    <link rel="dns-prefetch" href="//fprimecapital.com">
+<link rel="dns-prefetch" href="//s.w.org">
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/fprimecapital.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.6"}};
+			!function(e,a,t){var r,n,o,i,p=a.createElement("canvas"),s=p.getContext&&p.getContext("2d");function c(e,t){var a=String.fromCharCode;s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,e),0,0);var r=p.toDataURL();return s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,t),0,0),r===p.toDataURL()}function l(e){if(!s||!s.fillText)return!1;switch(s.textBaseline="top",s.font="600 32px Arial",e){case"flag":return!c([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])&&(!c([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!c([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]));case"emoji":return!c([55357,56424,8205,55356,57212],[55357,56424,8203,55356,57212])}return!1}function d(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(i=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},o=0;o<i.length;o++)t.supports[i[o]]=l(i[o]),t.supports.everything=t.supports.everything&&t.supports[i[o]],"flag"!==i[o]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[i[o]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(r=t.source||{}).concatemoji?d(r.concatemoji):r.wpemoji&&r.twemoji&&(d(r.twemoji),d(r.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+  padding: 0 !important;
+}
+
+
+
+#keywords {
+  margin: 0 auto;
+  font-size: 1.2em;
+  margin-bottom: 15px;
+}
+
+
+#keywords thead {
+  cursor: pointer;
+  background: #c9dff0;
+}
+#keywords thead tr th { 
+  font-weight: bold;
+  padding: 12px 30px;
+  padding-left: 42px;
+}
+#keywords thead tr th span { 
+  padding-right: 20px;
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+}
+
+#keywords thead tr th.headerSortUp, #keywords thead tr th.headerSortDown {
+  background: #007cba;
+}
+
+#keywords thead tr th.headerSortUp span {
+  background-image: url('https://i.imgur.com/SP99ZPJ.png');
+}
+#keywords thead tr th.headerSortDown span {
+  background-image: url('https://i.imgur.com/RkA9MBo.png');
+}
+
+
+#keywords tbody tr { 
+  color: #555;
+}
+#keywords tbody tr td {
+  text-align: center;
+  padding: 15px 10px;
+}
+#keywords tbody tr td.lalign {
+  text-align: left;
+}
+br{
+  line-height: 5px;
+}
+
+  h2{
+      width:80%;
+	  white-space: nowrap;
+  }
+
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+  }
+
+.centerlogo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+  }
+.all_options{
+    align-self: flex-end;
+    margin-left: 70%;
+
+    
+}
+
+h6{
+  color:black
+}
+
+table {
+      height:500px;
+      width: 120%;
+      min-height: 100px;
+      /* border-collapse: collapse; */
+    }
+
+    /* Zebra striping */
+    tr:nth-of-type(even) {
+      background: #eee;
+      z-index: 1;
+    }
+    tr:nth-of-type(odd) {
+      background: white;
+      z-index: 1;
+    }
+    th {
+      background: #333;
+      color: white;
+      font-weight: bold;
+      cursor: s-resize;
+      background-repeat: no-repeat;
+      background-position: 3% center;
+    }
+    td, th {
+      padding: 6px;
+      border: 1px solid #ccc;
+      text-align: left;
+    }
+    th.des:after {
+      content: "\21E9";
+    }
+    th.aes:after {
+      content: "\21E7";
+    }
+    table thead th:first-child {
+      position: sticky;
+      left: 0;
+      z-index: 2;
+    }
+    table tbody th {
+      position: sticky;
+      left: 0;
+      background: white;
+      z-index: 1;
+    }
+    /*
+	  Max width before this PARTICULAR table gets nasty
+	  This query will take effect for any screen smaller than 760px
+	  and also iPads specifically.
+	  */
+    @media only screen and (max-width: 760px),
+    (min-device-width: 768px) and (max-device-width: 1024px) {
+      .table-responsive {
+        overflow-y: auto;
+      }
+      /* Force table to not be like tables anymore */
+      /* table, thead, tbody, th, td, tr {
+        display: block;
+      } */
+      /* Hide table headers (but not display: none;, for accessibility) */
+      /* thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+      } */
+      /* tr {
+        border: 1px solid #ccc;
+      } */
+      /* td {
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 50%;
+      } */
+      /* td:before {
+        position: absolute;
+        top: 6px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+      } */
+      /* Label the data */
+      /* td:before {
+        content: attr(data-th) ": ";
+        font-weight: bold;
+        width: 6.5em;
+        display: inline-block;
+      } */
+    }
+
+    /* Smartphones (portrait and landscape) ----------- */
+    @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+      body {
+        padding: 0;
+        margin: 0;
+        width: 400px;
+      }
+    }
+
+    /* iPads (portrait and landscape) ----------- */
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+      body {
+        width: 495px;
+      }
+    }
+
+    /* .nasdaq-dot {
+  height: 15px;
+  width: 15px;
+  background-color: #1F1F1F;
+  border-radius: 50%;
+  margin-top: 10%;
+  display:block;
+  
+}
+
+.nasdaq-text{
+  margin-left: 0%;
+  margin-top: 0%
+}
+
+.fintech-dot {
+  height: 15px;
+  width: 15px;
+  background-color: #A6D0D8;
+  border-radius: 50%;
+  display: block;
+  margin-left: 0%;
+  margin-top: 10%
+}
+
+.fintech-text{
+  display: block;
+  margin-left: 42%;
+  margin-top: -1%
+}
+
+.faang-dot {
+  height: 15px;
+  width: 15px;
+  background-color: #5B56EE;
+  border-radius: 50%;
+  display: block;
+  margin-top: 10%
+}
+
+.faang-text{
+  display: block;
+  margin-left: 52%;
+  margin-top: -1%;
+  color: #5B56EE;
+}
+
+.snp500-dot {
+  height: 15px;
+  width: 15px;
+  background-color: #FC714D;
+  border-radius: 50%;
+  display: block;
+  margin-top: 10%
+}
+
+.snp500-text{
+  display: inline-block;
+  margin-left: 62%;
+  margin-top: -1%
+} */
+
+.statistics{
+  width: 100%;
+  text-align: center;
+}
+
+
+
+.bg1_off, .bg2_off,.bg3_off,.bg4_off,.bg5_off,.bg6_off,.bg7_off{
+  background-color: white;
+  border-top: 3px solid white;
+  border-left: 3px solid white;
+  border-right: 3px solid white;
+  padding-right: 7px;
+  text-transform: uppercase;
+  border-bottom: 2px solid white;
+}
+.bg1_off:hover, .bg2_off:hover,.bg3_off:hover,.bg4_off:hover,.bg5_off:hover,.bg6_off:hover,.bg7_off:hover{
+  border-bottom: 2px solid black;
+}
+.bg1_on, .bg2_on,.bg3_on,.bg4_on,.bg5_on,.bg6_on,.bg7_on{
+  background-color: white;
+  border-top: 3px solid white;
+  border-left: 3px solid white;
+  border-right: 3px solid white;
+  padding-right: 7px;
+  text-transform: uppercase;
+  border-bottom: 2px solid black;
+}
+.bg1_on:hover, .bg2_on:hover,.bg3_on:hover,.bg4_on:hover,.bg5_on:hover,.bg6_on:hover,.bg7_on:hover{
+  border-bottom: 2px solid black;
+}
+
+
+/* .overview{
+  border-right: 5px solid white;
+  margin-top: 60%;
+
+} */
+.brxsmall {
+    display: block;
+    margin-bottom: -.4em;
+}
+
+.indexflex {
+  font-size:200%;
+  margin:auto;
+  margin-top:1%;
+  margin-bottom: 2%;
+  display: flex;
+  justify-content: space-around;
+  max-width: 80%;
+  color: black;
+  text-align: center;
+  line-height: 35%;
+}
+
+/* .legendflex {
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  max-width: 50%;
+  color: black;
+} */
+
+
+
+
+#DivContent{
+  margin-left:5%;
+  width:90%;
+}
+
+.future-ipo-img{
+  margin: auto;
+  width: 55%;
+  margin-bottom: 5%;
+}
+path { 
+    stroke: steelblue;
+    stroke-width: 2;
+    fill: none;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: grey;
+    stroke-width: 1;
+    shape-rendering: crispEdges;
+}
+.container-fluid{
+  width:80%;
+}
+/* table {
+    table-layout: fixed;
+    word-wrap: break-word;
+    display:table;
+} */
+.table-design{
+  margin:0%;
+  margin-bottom: 0%;
+  margin-top:0%;
+  margin-left: 10%;
+  max-width: 1450px;
+  width:100%;
+}
+.table-design thead tbody{
+  width: 100%;
+  display:table;
+}
+.table-design thead th:first-child, td:first-child
+{
+  position:sticky;
+  left:0px;
+  background: white;
+  border-right:1px solid black;
+  z-index: 1;
+}
+.table-design thead tr{ position: sticky; top: 0; z-index: 2; }
+.table>:not(:last-child)>:last-child>* {
+  border-bottom: 1px solid black;
+}
+.table-responsive::-webkit-scrollbar {
+  width: 20px;
+}
+.table-responsive::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+.table-responsive::-webkit-scrollbar-thumb {
+  background-color: #d6dee1;
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+.col-sm-12{
+  width: 83.3%
+}
+.mouseOverlay {
+        fill: none;
+        pointer-events: all;
+    }
+
+
+
+/* 
+.f-prime-logo-nav-bar{
+  margin: auto;
+  width: 200px;
+} */
+
+/* basic positioning */
+
+
+/* .base-img{width:50%;display:block} */
+.ft_intro{display: flex;align-items:center;}
+.ft_intro-content{background-color:#1f1f1f}
+.section_headers_div{
+  margin-left:10%;
+  margin-top:3%;
+  margin-bottom: 2%;
+}
+
+/* @media (min-width: 768px){.base-intro{padding-left:60px}}
+@media (min-width: 1200px){.base-intro{padding-left:80px}}
+@media (min-width: 768px){.base-intro{padding-right:60px}}
+@media (min-width: 1200px){.base-intro{padding-right:80px}}
+.base-intro:after{content:'';display:table;clear:both}
+@media (min-width: 768px){.base-intro{margin-top:0}}
+.base-intro__content{-webkit-transform:translateZ(0px);transform:tran3slateZ(0px);display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-flex:1;-webkit-flex:1 1 auto;-ms-flex:1 1 auto;flex:1 1 auto;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;position:relative}@media (min-width: 920px){.base-intro__content{margin-left:-15px;-webkit-flex-wrap:nowrap;-ms-flex-wrap:nowrap;flex-wrap:nowrap}}
+.page_head{background-color:#1f1f1f;width:100%; color: #eee;height: 100%;}
+.sector__h{color: #eee; position:relative;font-size: 1.875em;}
+.sector__description{color: #eee;}
+.filter-nav__main{color:#eee;width:100%;display:block;position:relative;text-align:left;z-index:10} */
+@media (min-width: 1200px){.base-intro__content{margin-left:0px}}
+/* .base-intro__content--center{-webkit-box-align:left;-webkit-align-items:left;-ms-flex-align:left;align-items:left;} */
+.page_head{background-color:#1f1f1f;width:100%; color: #eee;height: 70%;}
+.top_line{margin-top: 3.5%; margin-bottom: 1.5%;display: flex; align-items: center;}
+.site_redirect{font-family: "Nantes",serif; font-weight: 550; margin-left:auto; color:#eee;display: table-cell; font-size: 1.8rem;}
+.redirect_text{color:#eee;}
+.fprime-logo-gray-bg{margin-left: -1.5%;width:230px;display: table-cell;}
+.ft__h{color: #eee;font-family: "Nantes",serif;font-size: 3.5vw;}
+.ft__description{color: #eee;font-weight: 400;}
+.ft__intro-main{margin-left: 20%;display: table-cell;width: 35%;vertical-align: middle; padding-left:0%;align-items:center;}
+.sector__intro-image{margin:auto;}
+.sector__intro-figure{width:75%; height: 75%; margin-left: 25%; margin-bottom:5%;margin-top:10%;}
+.ft__intro-figure{width:55%; height: 55%; margin-left:20%; display:table-cell; vertical-align: middle;top:50%;object-fit: cover;}
+/* .navbar_background{
+  background-color:white;
+  width: 100%;
+} */
+.navbar_ul{
+  padding: 0 0 0 0;
+}
+.navbar_margin{
+  margin-left:10%
+}
+#navbar {
+  background-color:#1f1f1f;
+  width: 100%;
+  padding-top:2%;
+  padding-bottom:1%;
+  z-index: 50;
+  overflow-x: auto;
+}
+#navbar a {
+  /* float:left;
+  display: block; */
+  color: #eee;
+  text-align: left;
+  /* font-size: 1.35vw; */
+}
+/* #navbar_background2{
+  background-color:white;
+  width: 100%;
+} */
+#navbar2 {
+  background-color:white;
+  width: 100%;
+  padding-top:1%;
+  padding-bottom:.5%;
+  z-index: 50;
+  overflow-x: auto;
+}
+#navbar2 a {
+  color: black;
+  text-align: left;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.index-numbers-fintech{color: #5B56EE; width:15%}
+.index-numbers-faang{color: #A6D0D8;}
+.index-numbers-nasdaq{color: #1F1F1F;}
+.index-numbers-snp500{color: #FC714D;}
+.index-numbers-emcloud{color: #A9A9A9;}
+.graphButtons{ margin-left: auto;margin-right: 8%;z-index: 1;margin-bottom: -2.2%;}
+/* .svg-style{
+  background-color: white;
+} */
+.legend { list-style: none;margin:auto;margin-bottom: 8%;vertical-align: middle;}
+.legend li { float: left; margin: 20px; }
+.legend span { border: 0px solid #ccc; float: left; width: 12px; height: 12px; margin: 2px; }
+/* your colors */
+.legend .fintech_legend { background-color: #5B56EE; border-radius: 50%;}
+.legend .faang_legend { background-color: #A6D0D8; border-radius: 50%;}
+.legend .nasdaq_legend { background-color: #1F1F1F; border-radius: 50%;}
+.legend .snp500_legend { background-color: #FC714D; border-radius: 50%;}
+.legend .emcloud_legend { background-color: #A9A9A9; border-radius: 50%;}
+.flex {
+  margin:auto;
+  margin-top:-2%;
+  margin-bottom: 2%;
+  max-width: 80%;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  vertical-align: middle;
+  background-color: #1F1F1F;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  color:floralwhite;
+  white-space: nowrap;
+  font-size: 1vw;
+}
+.future_additions{
+  display: flex;
+  justify-content: space-around;
+  margin:auto;
+  margin-top:1%;
+  margin-bottom: 1%;
+  width: 80%;
+}
+.flex_background{
+  background-color:#1F1F1F;
+}
+.stats_divider {
+  margin-top: 1%;
+  width:2%;
+  font-size: 35px;
+}
+/* .g-style{
+  font-size:25px;
+} */
+.focus circle {
+        fill: #5B56EE;
+    }
+
+.focus text {
+    font-size: 14px;
+}
+/* .focus .hover-data-style{
+   width: 150px;
+   height: 110px;
+} */
+
+
+.focus .tooltip-date{
+    font-weight: bold;
+}
+.focus .tooltip-fintech{
+    font-weight: bold;
+    fill: #5B56EE;
+}
+.focus .tooltip-faang{
+    font-weight: bold;
+    fill: #A6D0D8;
+}
+.focus .tooltip-nasdaq{
+    font-weight: bold;
+    fill: #1F1F1F;
+}
+.focus .tooltip-snp {
+    font-weight: bold;
+    fill: #FC714D;
+}
+.section_headers{
+  font-family: "Nantes",serif;
+  font-size:35px;
+}
+.topnav {
+  overflow: hidden;
+  position: relative;
+}
+
+.topnav #myLinks {
+  display: block;
+}
+.topnav #myLinks2 {
+  display: block;
+}
+.topnav #myLinks3 {
+  display: block;
+}
+.topnav #myLinks4 {
+  display: block;
+}
+.parallelogram {
+	width: 20px;
+	height: 10px;
+	transform: skew(0deg, -20deg);
+	background: #eee;
+  display: inline-block;
+  margin-right: 10%;
+  vertical-align: middle;
+}
+.parallelogram_stats {
+	width: 1.02vw;
+	height: 1.5vw;
+	transform: skew(-30deg, 0deg);
+	background: #eee;
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.active {
+  color: white;
+  white-space:normal;
+  border-bottom: 1px solid black;
+  min-width: 90px;
+  text-align: center;}
+.topnav a {
+  color: black;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 1.1vw;
+  display: block;
+}
+
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topnav a:hover {
+  border-bottom: 2px solid black;
+}
+.slides_frame{
+  margin:auto;
+  margin-top:2%;
+  margin-bottom: 2%;
+  width: 80%;
+  max-width: 1200px;
+}
+.about_us{
+  margin:auto;
+  width: 80%;
+  max-width: 1300px;
+  text-align: center;
+  font-family: "Nantes",serif;
+  font-size: 20px;
+}
+.table-design tbody{
+  font-size: .8vw;
+}
+.table-design thead{
+  font-size: .9vw;
+  text-align: center;
+}
+.dataTables_filter{
+  font-size: 1.0vw;
+}
+/* .table-design thead .sorting, .sorting_asc,.sorting_desc{
+  vertical-align: middle;
+} */
+@media screen and (max-width: 1350px) {
+  .table-design tbody{
+  font-size: 1.0vw;
+  }
+  .table-design thead{
+    font-size: 1.1vw;
+  }
+  .dataTables_filter{
+  font-size: 1.3vw;
+}
+.slides_frame{
+  max-height: 550px;
+}
+}
+@media screen and (max-width: 1050px) {
+.page_head{background-color:#1f1f1f;width:100%; color: #eee;height: 70%;}
+.top_line{margin-top: 2.5%;display: flex;  align-items: center;}
+.site_redirect{font-size: 2.8vw;}
+.ft__h{margin-left: 0%;color: #eee;font-family: "Nantes",serif;font-size: 4.5vw;}
+.ft__description{margin-left: 0%;color: #eee;font-weight: 400;font-size: 2vw;}
+.ft__intro-main{margin-left: 10%;display: table-cell;width: 100%;vertical-align: middle; padding-left:0%;align-items:center;}
+.ft__intro-figure{width:55%; height: 55%; margin-left:20%; display:table-cell; vertical-align: middle;top:50%;object-fit: cover;}
+.index-numbers-fintech{color: #5B56EE;font-size: 2.7vw;}
+.index-numbers-faang{color: #A6D0D8;font-size: 2.7vw;}
+.index-numbers-nasdaq{color: #1F1F1F;font-size: 2.7vw;}
+.index-numbers-snp500{color: #FC714D;font-size: 2.7vw;}
+.index-numbers-emcloud{color: #A9A9A9;font-size: 2.7vw;}
+.graphButtons{margin-left: auto;margin-right: 8%; font-size: 1.5vw;}
+.legend li { float: left; margin: 20px; margin-top: 5%;font-size: 1.5vw;}
+.legend span { border: 0px solid #ccc; float: left; width: 10px; height: 10px; margin: 2px; }
+.flex {
+  font-size: 1.2vw;
+}
+.stats_divider {
+  margin-top:2%;
+  width:4%;
+  font-size: 3.5vw;;
+}
+/* .g-style{
+  font-size:40px;
+} */
+.focus circle {
+        fill: #5B56EE;
+    }
+.focus text {
+    font-size: 14px;
+    display: inline-block;
+    
+}
+/* .focus .hover-data-style{
+   width: 180px;
+   height: 140px;
+} */
+.focus .tooltip-fintech{
+    font-weight: bold;
+    fill: #5B56EE;
+}
+.focus .tooltip-faang{
+    font-weight: bold;
+    fill: #A6D0D8;
+}
+.focus .tooltip-nasdaq{
+    font-weight: bold;
+    fill: #1F1F1F;
+}
+.focus .tooltip-snp {
+    font-weight: bold;
+    fill: #FC714D;
+}
+.svg-style{
+  height:200%;
+}
+.section_headers{
+  font-family: "Nantes",serif;
+  font-size:3.4vw;
+}
+.parallelogram {
+	width: 15px;
+	height: 7.5px;
+}
+.topnav a {
+  color: black;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 1.4vw;
+  display: block;
+}
+.slides_frame{
+  max-height: 450px;
+}
+.table-design tbody{
+  font-size: 1.3vw;
+}
+.table-design thead{
+  font-size: 1.4vw;
+}
+.dataTables_filter{
+  font-size: 1.6vw;
+}
+}
+@media screen and (max-width: 778px) {
+  #navbar a{
+    font-size: 4.5vw;
+    font: inherit;
+  }
+
+  #navbar2 a{
+    font-size: 4.5vw;
+    font: inherit;
+  }
+  .topnav a {
+  font-size: 1.5vw;
+  }
+  .flex {
+  font-size: 1.3vw;
+}
+.parallelogram {
+	width: 10px;
+	height: 5px;
+}
+.slides_frame{
+  max-height: 400px;
+}
+.table-design tbody{
+  font-size: 1.7vw;
+}
+.table-design thead{
+  font-size: 1.8vw;
+}
+.dataTables_filter{
+  font-size: 2.0vw;
+}
+}
+
+@media screen and (max-width: 582px) {
+  .sector__intro-main{margin:auto;}
+  .sector__intro-figure{width:75%; height: 75%; margin:auto;}
+  .section_headers{
+  font-family: "Nantes",serif;
+  font-size:4.2vw;
+}
+  .graphButtons{ margin-left: auto;font-size: 1.8vw;}
+  /* .g-style{
+  font-size:45px;
+} */
+/* .svg-style{
+  transform: scale(1, 1.4);
+} */
+
+.legend li { float: left; margin: 15px; margin-top:5%; font-size: 2.2vw;}
+.legend span { border: 0px solid #ccc; float: left; width: 8px; height: 8px; margin: 2px; }
+.flex {
+  font-size: 1.4vw;
+}
+.container-fluid{
+  width:95%;
+}
+.topnav a {
+  font-size: 1.7vw;
+  }
+.parallelogram {
+	width: 7.5px;
+	height: 3.75px;
+}
+
+.slides_frame{
+  max-height: 350px;
+}
+.table-design tbody{
+  font-size: 2.2vw;
+}
+.table-design thead{
+  font-size: 2.3vw;
+}
+.dataTables_filter{
+  font-size: 2.5vw;
+}
+.future_additions{
+  width: 90%;
+}
+.topnav a{
+  font-size: 1.8vw;
+}
+
+};
+.modal_box {
+  display:none; /* Hidden by default */
+  position: static;
+  z-index: 1; /* Sit on top */
+  overflow: auto; /* Enable scroll if needed */
+}
+/* .modal-content {
+  position: absolute;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+} */
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.vertical-type_toggles{
+  margin-top:5%;
+  margin-left:auto;
+  width: 60%;
+  background-color: white;
+  border: 1px solid #333;
+  border-radius: 10px;
+  padding-top: 1%;
+  padding-right: 1%;
+  padding-bottom: 1%;
+  padding-left: 1%;
+}
+.vertical_toggles{
+  margin-left: 1%;
+  margin-bottom: 5%
+}
+.type_toggles{
+  margin-left: 1%;
+  margin-bottom: 0%;
+  border-top:1px solid black ;
+}
+
+.grid{
+  z-index: 1;
+  color: #000;
+}
+/* CSS */
+.button-4 {
+  appearance: none;
+  background-color: #FAFBFC;
+  border: 1px solid rgba(27, 31, 35, 0.15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+  box-sizing: border-box;
+  color: #24292E;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  list-style: none;
+  padding: 6px 16px;
+  position: relative;
+  transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+  word-wrap: break-word;
+}
+
+.button-4:hover {
+  background-color: #F3F4F6;
+  text-decoration: none;
+  transition-duration: 0.1s;
+}
+
+.button-4:disabled {
+  background-color: #FAFBFC;
+  border-color: rgba(27, 31, 35, 0.15);
+  color: #959DA5;
+  cursor: default;
+}
+
+.button-4:active {
+  background-color: #EDEFF2;
+  box-shadow: rgba(225, 228, 232, 0.2) 0 1px 0 inset;
+  transition: none 0s;
+}
+
+.button-4:focus {
+  outline: 1px transparent;
+}
+/* .nav-extended{
+  background-color: red;
+  width:500%;
+  margin-left:-100%;
+  margin-bottom:-5%;
+  margin-top: 5%;
+
+}
+.nav-extended:before{
+    content: "";
+    display: block;
+    padding-top: 1.3%;
+} */
+
+
+/* .button-4:before {
+  display: none;
+}
+
+.button-4:-webkit-details-marker {
+  display: none;
+} */
+
+/* .sticky + .content {
+  padding-top: 60px;
+} */
+.dropbtn {
+  background-color: white;
+  color: black;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  /* float: right; */
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropbtn {border-bottom: 2px solid black;}
+/* .mobile-container {
+  max-width: 480px;
+  margin: auto;
+  background-color: #555;
+  height: 500px;
+  color: white;
+  border-radius: 10px;
+} */
+
+.csv_button{
+  margin-top:1%;
+  color: #1F1F1F;
+  float: left;
+  font-size: 18px;
+  
+}
+.about_tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.about_tooltip .about_tooltiptext {
+  visibility: hidden;
+  width:fit-content;
+  background-color: #1F1F1F;
+  color: #eee;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  font-size: 1.5vw;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  left: 105%;
+}
+
+.about_tooltip:hover .about_tooltiptext {
+  visibility: visible;
+}
+/* .dataTables_filter {
+text-align: right !important;
+} */
+#left{  
+ float: left;
+ }
+ #right{  
+ float: right;
+ }
+</style>
+	<link rel="stylesheet" id="wp-block-library-css" href="wp-includes/css/dist/block-library/style.min_ver%3D5.6.css" type="text/css" media="all">
+<link rel="stylesheet" id="fprime_styles-css" href="wp-content/themes/f-prime-wp-theme/static/build/css/screen_ver%3D1.2.2.css" type="text/css" media="all">
+<!-- <script type="text/javascript" src="wp-content/themes/f-prime-wp-theme/static/jquery/jquery-3.4.1.min_ver%3D3.4.1.js" id="jquery-core-js"></script> -->
+<script type="text/javascript" src="wp-includes/js/jquery/jquery-migrate.min_ver%3D3.3.2.js" id="jquery-migrate-js"></script>
+<link rel="https://api.w.org/" href="https://fprimecapital.com/wp-json/"><link rel="alternate" type="application/json" href="https://fprimecapital.com/wp-json/wp/v2/pages/5449"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://fprimecapital.com/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://fprimecapital.com/wp-includes/wlwmanifest.xml"> 
+<meta name="generator" content="WordPress 5.6">
+<link rel="canonical" href="https://fprimecapital.com/people">
+<link rel="shortlink" href="https://fprimecapital.com/?p=5449">
+<link rel="alternate" type="application/json+oembed" href="https://fprimecapital.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ffprimecapital.com%2Fpeople">
+<link rel="alternate" type="text/xml+oembed" href="https://fprimecapital.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ffprimecapital.com%2Fpeople&#038;format=xml">
+
+    <title>Index | F-Prime Capital</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="We create and invest in healthcare and technology companies that improve lives all over the world.">
+
+    <link rel="shortcut icon" href="wp-content/themes/f-prime-wp-theme/static/img/favicons/favicon.ico">
+    <link rel="icon" type="image/png" href="wp-content/themes/f-prime-wp-theme/static/img/favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="wp-content/themes/f-prime-wp-theme/static/img/favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="wp-content/themes/f-prime-wp-theme/static/img/favicons/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="wp-content/themes/f-prime-wp-theme/static/img/favicons/favicon-192x192.png" sizes="192x192">
+    <link rel="apple-touch-icon" href="wp-content/themes/f-prime-wp-theme/static/img/favicons/apple-touch-icon-180x180.png" sizes="180x180">
+    <link rel="mask-icon" href="wp-content/themes/f-prime-wp-theme/static/img/favicons/mask-icon-16x16.svg" color="#000000">
+
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="wp-content/themes/f-prime-wp-theme/static/img/f-prime-slash.jpg">
+    <meta property="og:description" content="We create and invest in healthcare and technology companies that improve lives all over the world.">
+    <meta property="og:site_name" content="F-Prime Capital">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:description" content="We create and invest in healthcare and technology companies that improve lives all over the world.">
+    <meta name="twitter:image" content="https://fprimecapital.com/wp-content/themes/f-prime-wp-theme/static/img/f-prime-slash.jpg">
+    <meta name="twitter:title" content="F-Prime Capital">
+  </head>
+
+  <body class="theme--light">
+  <div class = 'page_head'>
+
+
+    <header class="base-intro">
+      <div class = "top_line">
+        <div class = "fprime-logo-gray-bg"><a href = "https://fprimecapital.com/"><img src="FPrime_logo_gray_bg.PNG" alt="" id = "left"></a></div>
+        <div class="site_redirect"><a href = "https://fprimecapital.com/" id = "right" class = "redirect_text">F-Prime Home &#8594</a></div>
+      </div>
+      <div class="base-intro__content base-intro__content--center">
+        <div class="sector__intro-main">
+          <h2 class="sector__h">Fintech Index</h2>
+          <p class="sector__description">The F-Prime Fintech Index is designed to track the performance of emerging, publicly traded financial technology companies.</p>
+        </div>
+        <div class="sector__intro-image">
+          <figure class="sector__intro-figure">
+            <img src="technology-header2.png" alt="">
+          </figure>
+        </div>
+      </div>
+    </header>
+    <div class="filter-nav__main" id="navbar">
+      <div class = 'base-intro'>
+        <ul class = 'navbar_ul'>
+          <li class="filter-nav__list-item"><a class="nav__link" aria-current="page" href="javascript:void(0)" data-page="overview" target="_self">Overview</a></li>
+          <li class="filter-nav__list-item "><a class="nav__link" aria-current="page" href="javascript:void(0)" data-page="performance" target="_self">Index Info</a></li>
+          <li class="filter-nav__list-item "><a class="nav__link" aria-current="page" href="javascript:void(0)" data-page="companies" target="_self">Companies</a></li>
+          <li class="filter-nav__list-item "><a class="nav__link" aria-current="page" href="javascript:void(0)" data-page="future" target="_self">Future Companies</a></li>
+          <li class="filter-nav__list-item "><a class="nav__link" aria-current="page" href="javascript:void(0)" data-page="thesis" target="_self">State of Fintech</a></li>
+          <li class="filter-nav__list-item community-link"><a class="nav__link" aria-current="page" href="javascript:void(0)" data-page="about" target="_self">About Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+<div class="section_headers_div">
+  <h2 id = "overview" class="section_headers"></h2>
+</div>
+<div class='statistics'>
+<div class="indexflex">
+  <!-- <span style="font-size: 150%;">+</span> -->
+  <div class = "index-numbers-fintech"><span style="font-size: 120%;" id = "fintechValueJS"></span><a style="font-size: 120%;">%</a><a style="font-size: 50%;"><br>Fintech Index</a></div>
+  <div class = "index-numbers-faang"><span style="font-size: 120%;" id = "faangValueJS"></span><span style="font-size: 120%;">%</span><span style="font-size: 50%;"><br>FAANG Index</span></div>
+  <div class = "index-numbers-nasdaq"><span style="font-size: 120%;" id = "nasdaqValueJS"></span><span style="font-size: 120%;">%</span><span style="font-size: 50%;"><br>NASDAQ</span></div>
+  <div class = "index-numbers-snp500"><span style="font-size: 120%;" id = "snp500ValueJS"></span><span style="font-size: 120%;">%</span><span style="font-size: 50%;"><br>S&P 500</span></div>
+  <!-- <span class = "index-numbers-emcloud"><span style="font-size: 120%;" id = "emCloudValueJS"></span><span style="font-size: 120%;">%</span>  <span style="font-size: 50%;">EMCLOUD</span></span> -->
+</div>
+</div>
+
+<!-- <input id = "insurance_bool" type="checkbox" checked = ""/>Insurance -->
+<!-- <input id = "payments_bool" type="checkbox" checked = ""/>Payments
+<input id = "banking_bool" type="checkbox" checked = ""/>Banking
+<input id = "saas_bool" type="checkbox" checked = ""/>B2B SaaS
+<input id = "wealth_bool" type="checkbox" checked = ""/>Wealth/Asset Mgmt
+<input id = "re_bool" type="checkbox" checked = ""/>Real Estate -->
+
+
+<!-- The Modal -->
+<!-- <div id="myModal" class="modal_box">
+
+    <div class='vertical-type_toggles'>
+      <span class="close">&times;</span>
+      <div class = 'vertical_toggles'>
+        <div class="pretty p-default">
+          <input id = "insurance_bool" type="checkbox" checked = "" />
+          <div class="state">
+              <label>Insurance</label>
+          </div>
+        </div>
+        <div class="pretty p-default">
+          <input id = "payments_bool" type="checkbox" checked = "" />
+          <div class="state">
+              <label>Payments</label>
+          </div>
+        </div>
+        <div class="pretty p-default">
+          <input id = "banking_bool" type="checkbox" checked = "" />
+          <div class="state">
+              <label>Banking/Lending</label>
+          </div>
+        </div>
+        <div class="pretty p-default">
+          <input id = "saas_bool" type="checkbox" checked = "" />
+          <div class="state">
+              <label>B2B SaaS</label>
+          </div>
+        </div>
+        <div class="pretty p-default">
+          <input id = "wealth_bool" type="checkbox" checked = "" />
+          <div class="state">
+              <label>Wealth/Asset Mgmt</label>
+          </div>
+        </div>
+        <div class="pretty p-default">
+          <input id = "re_bool" type="checkbox" checked = "" />
+          <div class="state">
+              <label>Real Estate</label>
+          </div>
+        </div>
+      </div>
+      <div class = "type_toggles">
+        <div class="pretty p-switch">
+          <input id = "spac_bool" type="checkbox" checked = "" />
+          <div class="state">
+              <label>SPAC</label>
+          </div>
+        </div>
+        <div class="pretty p-switch">
+          <input id = "dl_bool" type="checkbox" checked = "" />
+          <div class="state">
+              <label>Direct Listing</label>
+          </div>
+        </div>
+        <div class="pretty p-switch">
+          <input id = "ipo_bool" type="checkbox" checked = "" />
+          <div class="state">
+              <label>Traditional IPO</label>
+          </div>
+        </div>    
+      </div>
+    </div>
+
+</div> -->
+<br /><br />
+<div class="graphButtons">
+<ul>
+    <input 
+          type="button" 
+          value="All Time"
+          onclick="updateAllTime()"
+          id = "bg1" 
+          class='bg1_on' />
+          <a>&nbsp;&nbsp;</a>
+    <input 
+          type="button" 
+          value="3Y"
+          onclick="update3Y()"
+          id = "bg2"
+          class='bg2_off' />
+          <a>&nbsp;&nbsp;</a>
+    <input 
+           type="button" 
+           value="1Y"
+           onclick="updateYearly()"
+           id = "bg3"
+           class='bg3_off' />
+           <a>&nbsp;&nbsp;</a>
+    <input 
+           type="button" 
+           value="YTD"
+           onclick="updateYTD()"
+           id = "bg4"
+           class='bg4_off' />
+           <a>&nbsp;&nbsp;</a>
+
+    <input 
+           type="button" 
+           value="6M"
+           onclick="update6M()"
+           id = "bg5" 
+           class='bg5_off' />
+           <a>&nbsp;&nbsp;</a>
+
+    <input  
+           type="button" 
+           value="1M" 
+           onclick="updateMonthly()"
+           id = "bg6"
+           class='bg6_off'/>
+           <a>&nbsp;&nbsp;</a>
+
+    <input 
+          type="button" 
+          value="1W" 
+          onclick="updateWeekly()"
+          id = "bg7"
+          class='bg7_off' />
+          <a>&nbsp;&nbsp;</a>
+  <!-- <button id="myBtn" class = "button-4">...</button> -->
+  <div class="dropdown" style="float:right;">
+    <button class="dropbtn"><span class="glyphicon">&#xe138;</span></button>
+    <div class="dropdown-content">
+      <div class = 'vertical_toggles'>
+        <div class="pretty p-default" style = "margin-left: 2%;margin-top: 5%;">
+          <input id = "insurance_bool" type="checkbox" checked = "" />
+          <div class="state">
+              <label>Insurance</label>
+          </div>
+        </div>
+
+        <div class="pretty p-default" style = "margin-left: 2%;margin-top: 5%;">
+          <input id = "payments_bool" type="checkbox" checked = "" />
+          <div class="state">
+              <label>Payments</label>
+          </div>
+        </div>
+
+        <div class="pretty p-default" style = "margin-left: 2%;margin-top: 5%;">
+          <input id = "banking_bool" type="checkbox" checked = "" />
+          <div class="state">
+              <label>Banking/Lending</label>
+          </div>
+        </div>
+
+        <div class="pretty p-default" style = "margin-left: 2%;margin-top: 5%;">
+          <input id = "saas_bool" type="checkbox" checked = "" />
+          <div class="state">
+              <label>B2B SaaS</label>
+          </div>
+        </div>
+
+        <div class="pretty p-default" style = "margin-left: 2%;margin-top: 5%;">
+          <input id = "wealth_bool" type="checkbox" checked = "" />
+          <div class="state">
+              <label>Wealth/Asset Mgmt</label>
+          </div>
+        </div>
+
+        <div class="pretty p-default" style = "margin-left: 2%;margin-top: 5%;margin-bottom: 1.5%;">
+          <input id = "re_bool" type="checkbox" checked = "" />
+          <div class="state">
+              <label>PropTech</label>
+          </div>
+        </div>
+      </div>
+      <div class = "type_toggles">
+        <div class="pretty p-switch" style = "margin-left: 2%;margin-top: 5%;">
+          <input id = "spac_bool" type="checkbox" checked = "" />
+          <div class="state">
+              <label>SPAC</label>
+          </div>
+        </div>
+        <div class="pretty p-switch" style = "margin-left: 2%;margin-top: 5%;">
+          <input id = "dl_bool" type="checkbox" checked = "" />
+          <div class="state">
+              <label>Direct Listing</label>
+          </div>
+        </div>
+        <div class="pretty p-switch" style = "margin-left: 2%;margin-top: 5%;margin-bottom: 5%;">
+          <input id = "ipo_bool" type="checkbox" checked = "" />
+          <div class="state">
+              <label>Traditional IPO</label>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</ul>
+</div>
+
+<!-- x
+<div>
+  <button aria-expanded="false" type="button" class="filter-portfolio__accordion-expand js--expand">
+    Yearly
+  </button>
+  <button aria-expanded="false" type="button" class="filter-portfolio__accordion-expand js--expand">
+    Monthly
+  </button>
+  <button aria-expanded="false" type="button" class="filter-portfolio__accordion-expand js--expand">
+    Weekly
+  </button>
+
+</div> -->
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
+
+<script>
+
+// var modal = document.getElementById("myModal");
+// modal.style.display = "none";
+// // Get the button that opens the modal
+// var btn = document.getElementById("myBtn");
+
+// // Get the <span> element that closes the modal
+// var span = document.getElementsByClassName("close")[0];
+
+// // When the user clicks the button, open the modal 
+// btn.onclick = function() {
+//   if (modal.style.display == "block"){modal.style.display = "none";}
+//   else {modal.style.display = "block";}
+// }
+
+// // When the user clicks on <span> (x), close the modal
+// span.onclick = function() {
+//   modal.style.display = "none";
+// }
+
+// // When the user clicks anywhere outside of the modal, close it
+// window.onclick = function(event) {
+//   if (event.target == modal) {
+//     modal.style.display = "none";
+//   }
+// }
+// function popupmenu() {
+//   document.getElementById("myDropdown").classList.toggle("show");
+// }
+
+// // Close the dropdown if the user clicks outside of it
+// window.onclick = function(event) {
+//   if (!event.target.matches('.vertical-type_toggle')) {
+//     var dropdowns = document.getElementsByClassName("dropdown-content");
+//     var i;
+//     for (i = 0; i < dropdowns.length; i++) {
+//       var openDropdown = dropdowns[i];
+//       if (openDropdown.classList.contains('show')) {
+//         openDropdown.classList.remove('show');
+//       }
+//     }
+//   }
+// }
+
+  $("a").click(function(){
+  var pageId = $(this).attr("data-page");
+  $("html, body").animate({ scrollTop: $("#"+pageId).offset().top }, 10);
+});
+
+  function getWidth() {
+    var windowWidth = document.documentElement.clientWidth;
+  // Math.max(
+  //   document.body.scrollWidth,
+  //   document.documentElement.scrollWidth,
+  //   document.body.offsetWidth,
+  //   document.documentElement.offsetWidth,
+  //   document.documentElement.clientWidth
+  // );
+
+  return windowWidth
+}
+
+function getHeight() {
+  var windowHeight = document.documentElement.clientHeight;
+  // Math.max(
+  //   document.body.scrollHeight,
+  //   document.documentElement.scrollHeight,
+  //   document.body.offsetHeight,
+  //   document.documentElement.offsetHeight,
+  //   document.documentElement.clientHeight
+  // );
+  return windowHeight
+}
+
+
+// console.log('Width:  ' +  winWidth);
+// console.log('Height: ' + window.innerHeight);
+function changeGraphSize(){
+var widthBrowser = getWidth();
+var heightBrowser = getHeight();
+console.log(widthBrowser)
+var	margin = {top: 30, right: 225, bottom: 30, left: 225},
+    width = widthBrowser  - margin.left - margin.right,
+    height = heightBrowser - 350,
+    tooltip = { width: 100, height: 100, x: 10, y: -30 };
+
+// Set the dimensions of the canvas / graph
+}
+// window.addEventListener("resize", changeGraphSize);
+  var widthBrowser = window.innerWidth;
+  var heightBrowser = window.innerHeight;
+  // Set the dimensions of the canvas / graph
+  var	margin = {top: 30, right: 150, bottom: 60, left: 180},
+    width = 1920  - margin.left - margin.right,
+    height = 960 - 350,
+    tooltip = { width: 100, height: 100, x: 10, y: -30 };
+ // Parse the Date / time
+var parseDate = d3.time.format("%m/%d/%Y").parse,
+        bisectDate = d3.bisector(function(d) { return d.Date; }).left,
+        formatValue = d3.format(","),
+        dateFormatter = d3.time.format("%m/%d/%y");
+
+
+// var parseDate = d3.time.format("%m/%e/%Y").parse,
+//         bisectDate = d3.bisector(function(d) { return d.date; }).left,
+//         formatValue = d3.format(","),
+//         dateFormatter = d3.time.format("%m/%d/%y");
+
+// Set the ranges
+var x = d3.time.scale().range([0, width]);
+var y = d3.scale.linear().range([height, 0]);
+
+var formatPercent = d3.format(".0%");
+// Define the axes
+var xAxis = d3.svg.axis().scale(x)
+    .orient("bottom").ticks(10);
+
+var yAxis = d3.svg.axis().scale(y)
+    .orient("left").ticks(10)
+    .tickFormat(formatPercent);
+
+// Define the line
+var	valueline = d3.svg.line()
+    .x(function(d) { return x(d.Date); })
+    .y(function(d) { return y(d.Fintech); })
+    .defined(function(d) { return d.Fintech; });
+// var	valueline5 = d3.svg.line()
+//     .x(function(d) { return x(d.Date); })
+//     .y(function(d) { return y(d.EMCLOUD); });
+var	valueline2 = d3.svg.line()
+    .x(function(d) { return x(d.Date); })
+    .y(function(d) { return y(d.FAANG); });
+
+    var	valueline3 = d3.svg.line()
+    .x(function(d) { return x(d.Date); })
+    .y(function(d) { return y(d.NASDAQ); });
+  
+  var	valueline4 = d3.svg.line()
+    .x(function(d) { return x(d.Date); })
+    .y(function(d) { return y(d.SNP500); });
+
+  
+
+// Adds the svg canvas
+var svg = d3.select("body")
+.append("svg")
+  .attr("viewBox", "0 0 " + (width + margin.left + margin.right) + " " + (height + margin.top + margin.bottom))
+  .attr("preserveAspectRatio", "xMinYMid meet")
+  .classed("svg-style", true)
+    // .attr("width", width + margin.left + margin.right)
+    // .attr("height", height + margin.top + margin.bottom)
+.append("g")
+    .attr("transform", 
+          "translate(" + margin.left + "," + margin.top + ")")
+    .classed("g-style", true);
+// gridlines in x axis function
+function make_x_axis() {        
+    return d3.svg.axis()
+        .scale(x)
+         .orient("bottom")
+         .ticks(5)
+}
+
+// gridlines in y axis function
+function make_y_axis() {        
+    return d3.svg.axis()
+        .scale(y)
+        .orient("left")
+        .ticks(5);
+}
+var text = svg.selectAll("text");
+
+function redraw(){
+// Extract the width and height that was computed by CSS.
+var width = chartDiv.clientWidth;
+var height = chartDiv.clientHeight;
+console.log(width)
+// Use the extracted size to set the size of an SVG element.
+svg
+  .attr("width", width + margin.left + margin.right)
+  .attr("height", height + margin.top + margin.bottom);
+}
+
+// // Draw for the first time to initialize.
+// redraw();
+
+// // Redraw based on the new size whenever the browser window is resized.
+// window.addEventListener("resize", redraw);        
+// var csvData = "Indexes.csv";
+// function updateAllTime() {
+//   var csvData = "Indexes.csv";
+// }
+// function updateYearly() {
+//   var csvData = "IndexesYearly.csv";
+// }
+// function updateMonthly() {
+//   var csvData = "IndexesMonthly.csv";
+// }
+// function updateWeekly() {
+//   var csvData = "IndexesWeekly.csv";
+// }
+// Get the data
+var dataVar, DateVar, FintechVar, FAANGVar, NASDAQVar, SNP500VAR;
+function mousemove1(dataValues, Date, Fintech, FAANG, NASDAQ, SNP500, focus,x0) {
+// console.log("aloha");
+// var htmlString = focus.select(".tooltip-snp")[0][0];
+// console.log(htmlString);
+// var x0 = x.invert(d3.mouse(this)[0]);
+var i = bisectDate(dataValues, x0, 1),
+    d0 = dataValues[i - 1],
+    d1 = dataValues[i],
+    d = x0 - d0.Date > d1.Date - x0 ? d1 : d0;
+  focus.attr("transform", "translate(" + x(d.Date) + "," + y(d.Fintech) + ")");
+  focus.select(".tooltip-date").text(dateFormatter(d.Date));
+  focus.select(".tooltip-fintech").text('Fintech: ' + formatValue((d.Fintech*100).toFixed(1))+"%");
+  focus.select(".tooltip-faang").text('FAANG: ' + formatValue((d.FAANG*100).toFixed(1))+"%");
+  focus.select(".tooltip-nasdaq").text('NASDAQ: ' + formatValue((d.NASDAQ*100).toFixed(1))+"%");
+  focus.select(".tooltip-snp").text('S&P500: ' + formatValue((d.SNP500*100).toFixed(1))+"%");
+  // focus.select(".tooltip-emcloud").text(formatValue((d.EMCLOUD*100).toFixed(1))+"%");
+}
+var new_ft;
+var proper_tickers;
+var possible_companies;
+    d3.csv("possible_companies.csv", function(possible_comps){
+      possible_companies=possible_comps;
+      });
+
+var ft_companies;
+d3.csv("normalized_ft_comps.csv", function(ft_comps){
+      ft_companies=ft_comps;
+      });
+
+const average = (array) => (array.length>0)?array.reduce((a, b) => a + b) / array.length:undefined;
+
+var time_frame = 'All Time'
+
+var removeVerticals = []
+var removeType = []
+var insurance_bool = true;
+var payments_bool = true;
+var banking_bool = true;
+var saas_bool = true;
+var wealth_bool = true;
+var re_bool = true;
+var spac_bool = true;
+var dl_bool = true;
+var ipo_bool = true;
+$('#insurance_bool').change(function() {
+    insurance_bool = this.checked;
+    insur_check_box_clicked();
+  });
+  $('#payments_bool').change(function() {
+    payments_bool = this.checked;
+    pay_check_box_clicked();
+  });
+  $('#banking_bool').change(function() {
+    banking_bool = this.checked;
+    bank_check_box_clicked();
+  });
+  $('#saas_bool').change(function() {
+    saas_bool = this.checked;
+    saas_check_box_clicked();
+  });
+  $('#wealth_bool').change(function() {
+    wealth_bool = this.checked;
+    wealth_check_box_clicked();
+  });
+  $('#re_bool').change(function() {
+    re_bool = this.checked;
+    re_check_box_clicked();
+  });
+  $('#spac_bool').change(function() {
+    spac_bool = this.checked;
+    spac_check_box_clicked();
+  });
+  $('#dl_bool').change(function() {
+    dl_bool = this.checked;
+    dl_check_box_clicked();
+  });
+  $('#ipo_bool').change(function() {
+    ipo_bool = this.checked;
+    ipo_check_box_clicked();
+  });
+function change_time_scale(){
+    if (time_frame == 'All Time'){updateAllTime()}
+    else if(time_frame == '3Y'){update3Y()}
+    else if(time_frame == '1Y'){updateYearly()}
+    else if(time_frame == 'YTD'){updateYTD()}
+    else if(time_frame == '6M'){update6M()}
+    else if(time_frame == '1M'){updateMonthly()}
+    else if(time_frame == '1W'){updateWeekly()}    
+};
+function insur_check_box_clicked(){
+  if (insurance_bool){    
+    const index = removeVerticals.indexOf('Insurance');
+    if (index > -1) {
+      removeVerticals.splice(index, 1);
+    }
+  }
+  else{removeVerticals.push('Insurance')}
+  change_time_scale();
+};
+function pay_check_box_clicked(){
+  if (payments_bool){    
+    const index = removeVerticals.indexOf('Payments');
+    if (index > -1) {
+      removeVerticals.splice(index, 1);
+    }
+  }
+  else{removeVerticals.push('Payments')}
+  change_time_scale();
+};
+function bank_check_box_clicked(){
+  if (banking_bool){    
+    const index = removeVerticals.indexOf('Banking/Lending');
+    if (index > -1) {
+      removeVerticals.splice(index, 1);
+    }
+  }
+  else{removeVerticals.push('Banking/Lending')}
+  change_time_scale();
+};
+function saas_check_box_clicked(){
+  if (saas_bool){    
+    const index = removeVerticals.indexOf('B2B SaaS');
+    if (index > -1) {
+      removeVerticals.splice(index, 1);
+    }
+  }
+  else{removeVerticals.push('B2B SaaS')}
+  change_time_scale();
+};
+function wealth_check_box_clicked(){
+  if (wealth_bool){    
+    const index = removeVerticals.indexOf('Wealth/Asset Mgmt');
+    if (index > -1) {
+      removeVerticals.splice(index, 1);
+    }
+  }
+  else{removeVerticals.push('Wealth/Asset Mgmt')}
+  change_time_scale();
+};
+function re_check_box_clicked(){
+  if (re_bool){    
+    const index = removeVerticals.indexOf('PropTech');
+    if (index > -1) {
+      removeVerticals.splice(index, 1);
+    }
+  }
+  else{removeVerticals.push('PropTech')}
+  change_time_scale();
+};
+function spac_check_box_clicked(){
+  if (spac_bool){    
+    const index = removeType.indexOf('SPAC');
+    if (index > -1) {
+      removeType.splice(index, 1);
+    }
+  }
+  else{removeType.push('SPAC')}
+  change_time_scale();
+};
+function dl_check_box_clicked(){
+  if (dl_bool){    
+    const index = removeType.indexOf('DL');
+    if (index > -1) {
+      removeType.splice(index, 1);
+    }
+  }
+  else{removeType.push('DL')}
+  change_time_scale();
+};
+function ipo_check_box_clicked(){
+  if (ipo_bool){    
+    const index = removeType.indexOf('IPO');
+    if (index > -1) {
+      removeType.splice(index, 1);
+    }
+  }
+  else{removeType.push('IPO')}
+  change_time_scale();
+};
+var container = d3.select("body").append("div")
+    .style("width",width);
+   
+d3.csv("Indexes.csv", function(error, data) {
+    data.forEach(function(d) {
+        d.Date = parseDate(d.Date);
+        d.Fintech = +d.Fintech;
+        d.FAANG = +d.FAANG;
+        d.NASDAQ = +d.NASDAQ;
+        d.SNP500= +d.SNP500;
+        // d.EMCLOUD = +d.EMCLOUD;
+    });
+    // Scale the range of the data
+    x.domain(d3.extent(data, function(d) { return d.Date; }));
+    if (window.innerWidth<780){
+      y.domain([d3.min(data, function(d) {return Math.min(d.NASDAQ, d.FAANG, d.Fintech, d.SNP500); })-.3, d3.max(data, function(d) { return Math.max(d.NASDAQ, d.FAANG, d.Fintech, d.SNP500); })*1.4]);
+    }
+    else{
+      y.domain([d3.min(data, function(d) {return Math.min(d.NASDAQ, d.FAANG, d.Fintech, d.SNP500); })-.3, d3.max(data, function(d) { return Math.max(d.NASDAQ, d.FAANG, d.Fintech, d.SNP500); })*1.2]);
+    }
+    document.getElementById("fintechValueJS").innerHTML = ((data[data.length-1].Fintech*100)<0?"":"+") + (data[data.length-1].Fintech*100).toFixed(1); 
+    document.getElementById("faangValueJS").innerHTML = ((data[data.length-1].FAANG*100)<0?"":"+") + (data[data.length-1].FAANG*100).toFixed(1);
+    document.getElementById("nasdaqValueJS").innerHTML = ((data[data.length-1].NASDAQ*100)<0?"":"+") + (data[data.length-1].NASDAQ*100).toFixed(1);
+    document.getElementById("snp500ValueJS").innerHTML = ((data[data.length-1].SNP500*100)<0?"":"+") + (data[data.length-1].SNP500*100).toFixed(1);
+    // document.getElementById("emCloudValueJS").innerHTML = ((data[data.length-1].SNP500*100)<0?"":"+") + (data[data.length-1].EMCLOUD*100).toFixed(1);
+    dataVar = data;
+    DateVar = data.Date;
+    FintechVar = data.Fintech; 
+    FAANGVar = data.FAANG;
+    NASDAQVar = data.NASDAQ;
+    SNP500VAR = data.SNP500;
+    // EMCLOUDVAR = data.EMCLOUD;
+    // Add the valueline path.
+    svg.append("path")
+        .attr("class", "line")
+        .style("stroke", "#5B56EE")
+        .attr("d", valueline(data));
+
+    svg.append("path")   // change the line
+      .attr("class", "line2")
+      .style("stroke", "#A6D0D8")
+      .attr("d", valueline2(data));
+
+    svg.append("path")   // change the line
+      .attr("class", "line3")
+      .style("stroke", "black")
+      .attr("d", valueline3(data));
+    svg.append("path")   // change the line
+      .attr("class", "line4")
+      .style("stroke", "#FC714D")
+      .attr("d", valueline4(data));
+    // svg.append("path")   // change the line
+    //   .attr("class", "line5")
+    //   .style("stroke", "#A9A9A9")
+    //   .attr("d", valueline5(data));
+
+    // Add the X Axis
+
+  // add the Y gridlines
+
+
+    svg.append("g")
+        .attr("class", "x axis")
+        .attr("transform", "translate(0," + height + ")")
+        .call(xAxis);
+
+    // Add the Y Axis
+    svg.append("g")
+        .attr("class", "y axis")
+        .call(yAxis);
+    // svg.append("g")         
+    // .attr("class", "grid")
+    // .attr("style","color: black;")
+    // .attr("transform", "translate(0," + height + ")")
+    // .call(make_x_axis()
+    //     .tickSize(-height, 0, 0)
+    //     .tickFormat("")
+    // )
+    // svg.append("g")			
+    // .attr("class", "grid")
+    // .call(make_y_axis()
+    //         .tickSize(-width, 0, 0)
+    //         .tickFormat("")
+    // )
+    var focus = svg.append("g")
+        .attr("class", "focus")
+        .attr("style","display: none; position: absolute; z-index: -1;");
+  
+    focus.append("circle")
+        .attr("r", 5);
+    focus.append("rect")
+        .attr("width", 1)
+        .attr("y", -1000)
+        .attr("height", 1600)
+        .attr("style","border-style: dotted; position: absolute;");
+    var t_box = focus.append("rect")
+        .attr("class", "hover-data-style")
+        .attr("width", 150)
+        .attr("height", 110)
+        .attr("x", -75)
+        .attr("y", -120)
+        .attr("rx", 4)
+        .attr("ry", 4)
+        .attr("style","fill:white; stroke:black;");
+    var t_date = focus.append("text")
+        .attr("class", "tooltip-date")
+        .attr("x", -55)
+        .attr("y", -100);
+
+    var t_ft = focus.append("text").classed("tooltip-fintech", true)
+        .attr("style","fill: #5B56EE;").attr("x",-55).attr("y",-80);
+    
+
+    var t_faang = focus.append("text")
+        .attr("class", "tooltip-faang")
+        .attr("x", -55)
+        .attr("y", -60)
+        .attr("style","fill: #A6D0D8;");
+
+    var t_nasdaq = focus.append("text")
+        .attr("class", "tooltip-nasdaq")
+        .attr("x", -55)
+        .attr("y", -40)
+        .attr("style","fill: black;");
+
+    var t_snp = focus.append("text")
+        .attr("class", "tooltip-snp")
+        .attr("x", -55)
+        .attr("y", -20)
+        .attr("style","fill: #FC714D;");
+    // focus.append("text")
+    //     .attr("x", -55)
+    //     .attr("y", -20)
+    //     .text("Cloud:")
+    //     .attr("style","fill: #A9A9A9;");
+
+    // focus.append("text")
+    //     .attr("class", "tooltip-emcloud")
+    //     .attr("x", 10)
+    //     .attr("y", -20)
+    //     .attr("style","fill: #A9A9A9;");
+    resized();
+    var htmlString = focus[0][0];
+    console.log(htmlString);
+    var engHello = "hello"
+    svg.append("rect")
+        .attr("class", "mouseOverlay")
+        .attr("width", width)
+        .attr("height", height)
+        .on("mouseover", function() { focus.style('display',null); })
+        .on("mouseout", function() { focus.attr("style","display: none; position: absolute;"); })
+        .on("mousemove", function(){var x0 = x.invert(d3.mouse(this)[0]); mousemove1(dataVar, DateVar, FintechVar, FAANGVar, NASDAQVar, SNP500VAR,focus,x0);});
+        // .on("mousemove", mousemove);
+  //   function mousemove() {
+  //   var x0 = x.invert(d3.mouse(this)[0]),
+  //         i = bisectDate(data, x0, 1),
+  //         d0 = data[i - 1],
+  //         d1 = data[i],
+  //         d = x0 - d0.Date > d1.Date - x0 ? d1 : d0;
+  //     focus.attr("transform", "translate(" + x(d.Date) + "," + y(d.Fintech) + ")");
+  //     focus.select(".tooltip-date").text(dateFormatter(d.Date));
+  //     focus.select(".tooltip-fintech").text(formatValue(d.Fintech.toFixed(2)));
+  //     focus.select(".tooltip-faang").text(formatValue(d.FAANG.toFixed(2)));
+  //     focus.select(".tooltip-nasdaq").text(formatValue(d.NASDAQ.toFixed(2)));
+  //     focus.select(".tooltip-snp").text(formatValue(d.SNP500.toFixed(2)));
+  //     var htmlString = focus.select(".tooltip-snp")[0][0];
+  //     console.log(htmlString);
+  // }
+      function resized() {
+      // if (window.innerWidth<780){
+      //   y.domain([d3.min(data, function(d) {return Math.min(d.NASDAQ, d.FAANG, d.Fintech, d.SNP500); })-.3, d3.max(data, function(d) { return Math.max(d.NASDAQ, d.FAANG, d.Fintech, d.SNP500); })*2]);
+      // }
+      var scale = width / window.innerWidth;
+      // Update SVG height to maintain aspect ratio
+      svg.attr("height",height / scale);
+      const newWidth = d3.select("svg").style("width");
+      const newFontSize = 40 * (600 / parseInt(newWidth));
+      d3.selectAll(".tick").select("text")
+          .style("font-size", newFontSize)
+      // Increase text scale proportional to overall scale reduction
+      // e.g. 3/4 of the original width -> scale text by 4/3
+      var n = 2;
+      // t_box.attr("height",110+((scale)>1 ? 1+((scale-1)/n*10) : 1));
+      // t_box.attr("y",-140-((scale)>1 ? 1+((scale-1)/n*10) : 1));
+      t_box.attr("transform","scale(" + ((scale)>1 ? 1+(scale-1)/n : 1) + "," + ((scale)>1 ? 1+(scale-1)/n : 1) + ")");
+      t_date.attr("transform","scale(" + ((scale)>1 ? 1+(scale-1)/n : 1) + "," + ((scale)>1 ? 1+(scale-1)/n : 1) + ")");
+      t_ft.attr("transform","scale(" + ((scale)>1 ? 1+(scale-1)/n : 1) + "," + ((scale)>1 ? 1+(scale-1)/n : 1) + ")");
+      t_faang.attr("transform","scale(" + ((scale)>1 ? 1+(scale-1)/n : 1) + "," + ((scale)>1 ? 1+(scale-1)/n : 1) + ")");
+      t_nasdaq.attr("transform","scale(" + ((scale)>1 ? 1+(scale-1)/n : 1) + "," + ((scale)>1 ? 1+(scale-1)/n : 1) + ")");
+      t_snp.attr("transform","scale(" + ((scale)>1 ? 1+(scale-1)/n : 1) + "," + ((scale)>1 ? 1+(scale-1)/n : 1) + ")");
+      // t_date.attr("y",-120-((scale)>1 ? 1+(scale-1)/n : 1)*-7);
+      // t_ft.attr("y",-100-((scale)>1 ? 1+(scale-1)/n : 1)*-7);
+      // t_faang.attr("y",-80-((scale)>1 ? 1+(scale-1)/n : 1)*-7);
+      // t_nasdaq.attr("y",-60-((scale)>1 ? 1+(scale-1)/n : 1)*-7);
+      // t_snp.attr("y",-40-((scale)>1 ? 1+(scale-1)/n : 1)*-7);
+      console.log(((scale)>1 ? 1+(scale-1)/10 : 1))
+      }
+      window.onresize = resized;
+});
+
+// ** UpDate data section (Called from the onclick)
+function updateAllTime() {
+    // Get the data again
+    document.getElementById("bg1").className = "bg1_on";
+    document.getElementById("bg2").className = "bg2_off";
+    document.getElementById("bg3").className = "bg3_off";
+    document.getElementById("bg4").className = "bg4_off";
+    document.getElementById("bg5").className = "bg5_off";
+    document.getElementById("bg6").className = "bg6_off";
+    document.getElementById("bg7").className = "bg7_off";
+
+    time_frame = 'All Time'
+    d3.csv("Indexes.csv", function(error, data) {
+       	data.forEach(function(d) {
+            d.Date = parseDate(d.Date);
+            d.Fintech = +d.Fintech;
+            d.FAANG = +d.FAANG;
+            d.NASDAQ = +d.NASDAQ;
+            d.SNP500= +d.SNP500;
+            // d.EMCLOUD = +d.EMCLOUD;
+	    });
+      console.log(removeVerticals)
+      console.log(removeType)
+      var possible_comps_filtered = possible_companies.filter(function (el) {
+        return (removeType.indexOf(el.type) < 0)&(removeVerticals.indexOf(el.vertical) < 0); 
+      });
+      proper_tickers = possible_comps_filtered.map(a => a.ticker)
+      console.log(proper_tickers)
+      new_ft = ft_companies.map(function(a) {return _.pick(a,proper_tickers)}).map(function(i){return Object.values(i).filter(function(x) {return x !== ""}).map(i=>Number(i))}).map(function(i){return average(i)}).map(function(x){return x-1})
+      // console.log(new_ft);
+      for(var i = 0; i < new_ft.length; i += 1) {
+        data[i].Fintech = new_ft[i];
+      }
+      // var today = new Date();
+      // today.setFullYear(today.getFullYear()-3);
+      // console.log(today.toLocaleDateString())
+    	// Scale the range of the data again 
+    	x.domain(d3.extent(data, function(d) { return d.Date; }));
+      if (window.innerWidth<780){
+        y.domain([d3.min(data, function(d) {return Math.min(d.NASDAQ, d.FAANG, d.Fintech, d.SNP500); })-.3, d3.max(data, function(d) { return Math.max(d.NASDAQ, d.FAANG, d.Fintech, d.SNP500); })*1.4]);
+      }
+      else{
+        y.domain([d3.min(data, function(d) {return Math.min(d.NASDAQ, d.FAANG, d.Fintech, d.SNP500); })-.3, d3.max(data, function(d) { return Math.max(d.NASDAQ, d.FAANG, d.Fintech, d.SNP500); })*1.2]);
+      }
+      
+      document.getElementById("fintechValueJS").innerHTML = ((data[data.length-1].Fintech*100)<0?"":"+") + (data[data.length-1].Fintech*100).toFixed(1); 
+      document.getElementById("faangValueJS").innerHTML = ((data[data.length-1].FAANG*100)<0?"":"+") + (data[data.length-1].FAANG*100).toFixed(1);
+      document.getElementById("nasdaqValueJS").innerHTML = ((data[data.length-1].NASDAQ*100)<0?"":"+") + (data[data.length-1].NASDAQ*100).toFixed(1);
+      document.getElementById("snp500ValueJS").innerHTML = ((data[data.length-1].SNP500*100)<0?"":"+") + (data[data.length-1].SNP500*100).toFixed(1);
+      // document.getElementById("emCloudValueJS").innerHTML = ((data[data.length-1].SNP500*100)<0?"":"+") + (data[data.length-1].EMCLOUD*100).toFixed(1);
+      dataVar = data;
+      DateVar = data.Date;
+      FintechVar = data.Fintech; 
+      FAANGVar = data.FAANG;
+      NASDAQVar = data.NASDAQ;
+      SNP500VAR = data.SNP500;
+
+      // var today = new Date();
+      // today.setFullYear(today.getFullYear()-1);
+      // console.log(today.toLocaleDateString())
+
+      // EMCLOUDVAR = data.EMCLOUD;
+    // Select the section we want to apply our changes to
+    var svg = d3.select("body").transition();
+
+    // Make the changes
+        svg.select(".line")   // change the line
+            .duration(750)
+            .attr("class", "line")
+            .style("stroke", "#5B56EE")
+            .attr("d", valueline(data));
+        svg.select(".line2")   // change the line
+            .duration(750)
+            .attr("class", "line2")
+            .style("stroke", "#A6D0D8")
+            .attr("d", valueline2(data));
+        svg.select(".line3")   // change the line
+            .duration(750)
+            .attr("class", "line3")
+            .style("stroke", "black")
+            .attr("d", valueline3(data));
+        svg.select(".line4")   // change the line
+            .duration(750)
+            .attr("class", "line4")
+            .style("stroke", "#FC714D")
+            .attr("d", valueline4(data));
+        // svg.select(".line5")   // change the line
+        //     .duration(750)
+        //     .attr("class", "line5")
+        //     .style("stroke", "#A9A9A9")
+        //     .attr("d", valueline5(data));
+        svg.select(".x.axis") // change the x axis
+            .duration(750)
+            .call(xAxis.tickFormat(d3.time.format("%Y")).ticks(10));
+        svg.select(".y.axis") // change the y axis
+            .duration(750)
+            .call(yAxis);
+    });
+}
+function update3Y() {
+    // let button_graph_h = document.querySelector(".button_graph:hover");
+    // button_graph_h.style.borderBottom = "2px solid black";
+    document.getElementById("bg1").className = "bg1_off";
+    document.getElementById("bg2").className = "bg2_on";
+    document.getElementById("bg3").className = "bg3_off";
+    document.getElementById("bg4").className = "bg4_off";
+    document.getElementById("bg5").className = "bg5_off";
+    document.getElementById("bg6").className = "bg6_off";
+    document.getElementById("bg7").className = "bg7_off";
+    time_frame = '3Y'
+    // Get the data again
+    // setTimeout(function(){
+    // console.log(possible_companies);
+    d3.csv("Indexes.csv", function(error, data) {
+       	data.forEach(function(d) {
+            d.Date = parseDate(d.Date);
+            d.Fintech = +d.Fintech;
+            d.FAANG = +d.FAANG;
+            d.NASDAQ = +d.NASDAQ;
+            d.SNP500= +d.SNP500;
+            d.EMCLOUD = +d.EMCLOUD;
+	    });
+      var possible_comps_filtered = possible_companies.filter(function (el) {
+        return (removeType.indexOf(el.type) < 0)&(removeVerticals.indexOf(el.vertical) < 0); 
+      });
+      proper_tickers = possible_comps_filtered.map(a => a.ticker)
+      // console.log(proper_tickers)
+      new_ft = ft_companies.map(function(a) {return _.pick(a,proper_tickers)}).map(function(i){return Object.values(i).filter(function(x) {return x !== ""}).map(i=>Number(i))}).map(function(i){return average(i)}).map(function(x){return x-1})
+      
+      console.log(new_ft);
+      for(var i = 0; i < new_ft.length; i += 1) {
+        data[i].Fintech = new_ft[i];
+      }
+      // var today = new Date();
+      // today.setFullYear(today.getFullYear()-3);
+      // console.log(today.toLocaleDateString())
+      var dateTresh = new Date();
+      dateTresh.setDate(dateTresh.getDate() - 1);
+      // var nextMonth = today.add('month', 1);
+      dateTresh.setFullYear(dateTresh.getFullYear()-3);
+      var data = data.filter(function (el) {
+        return el.Date > dateTresh;
+      });
+      var first_ft_val = data[0].Fintech
+      var first_faang_val = data[0].FAANG
+      var first_nasdaq_val = data[0].NASDAQ
+      var first_snp_val = data[0].SNP500
+      data.map((d) => {
+        d.Fintech = ((d.Fintech+1)/(first_ft_val+1))-1
+        d.FAANG = ((d.FAANG+1)/(first_faang_val+1))-1
+        d.NASDAQ = ((d.NASDAQ+1)/(first_nasdaq_val+1))-1
+        d.SNP500 = ((d.SNP500+1)/(first_snp_val+1))-1
+        return data;
+      });
+      // var foo = { a: 1, b: 2, c: {x: 999, y:998, z: 997}};
+      // console.log(foo)
+    	// Scale the range of the data again 
+    	x.domain(d3.extent(data, function(d) { return d.Date; }));
+      if (window.innerWidth<780){
+        y.domain([d3.min(data, function(d) {return Math.min(d.NASDAQ, d.FAANG, d.Fintech, d.SNP500); })-.3, d3.max(data, function(d) { return Math.max(d.NASDAQ, d.FAANG, d.Fintech, d.SNP500); })*1.9]);
+      }
+      else{
+        y.domain([d3.min(data, function(d) {return Math.min(d.NASDAQ, d.FAANG, d.Fintech, d.SNP500); })-.3, d3.max(data, function(d) { return Math.max(d.NASDAQ, d.FAANG, d.Fintech, d.SNP500); })*1.5]);
+      }
+      
+      document.getElementById("fintechValueJS").innerHTML = ((data[data.length-1].Fintech*100)<0?"":"+") + (data[data.length-1].Fintech*100).toFixed(1); 
+      document.getElementById("faangValueJS").innerHTML = ((data[data.length-1].FAANG*100)<0?"":"+") + (data[data.length-1].FAANG*100).toFixed(1);
+      document.getElementById("nasdaqValueJS").innerHTML = ((data[data.length-1].NASDAQ*100)<0?"":"+") + (data[data.length-1].NASDAQ*100).toFixed(1);
+      document.getElementById("snp500ValueJS").innerHTML = ((data[data.length-1].SNP500*100)<0?"":"+") + (data[data.length-1].SNP500*100).toFixed(1);
+      // document.getElementById("emCloudValueJS").innerHTML = ((data[data.length-1].SNP500*100)<0?"":"+") + (data[data.length-1].EMCLOUD*100).toFixed(1);
+      dataVar = data;
+      DateVar = data.Date;
+      FintechVar = data.Fintech; 
+      FAANGVar = data.FAANG;
+      NASDAQVar = data.NASDAQ;
+      SNP500VAR = data.SNP500;
+      // EMCLOUDVAR = data.EMCLOUD;
+    // Select the section we want to apply our changes to
+    
+    var svg = d3.select("body").transition();
+
+    // Make the changes
+        svg.select(".line")   // change the line
+            .duration(750)
+            .attr("class", "line")
+            .style("stroke", "#5B56EE")
+            .attr("d", valueline(data));
+        svg.select(".line2")   // change the line
+            .duration(750)
+            .attr("class", "line2")
+            .style("stroke", "#A6D0D8")
+            .attr("d", valueline2(data));
+        svg.select(".line3")   // change the line
+            .duration(750)
+            .attr("class", "line3")
+            .style("stroke", "black")
+            .attr("d", valueline3(data));
+        svg.select(".line4")   // change the line
+            .duration(750)
+            .attr("class", "line4")
+            .style("stroke", "#FC714D")
+            .attr("d", valueline4(data));
+        // svg.select(".line5")   // change the line
+        //     .duration(750)
+        //     .attr("class", "line5")
+        //     .style("stroke", "#A9A9A9")
+        //     .attr("d", valueline5(data));
+        svg.select(".x.axis") // change the x axis
+            .duration(750)
+            .call(xAxis.tickFormat(d3.time.format("%Y")).ticks(3));
+        svg.select(".y.axis") // change the y axis
+            .duration(750)
+            .call(yAxis);
+    });
+}
+// ** UpDate data section (Called from the onclick)
+function updateYearly() {
+  document.getElementById("bg1").className = "bg1_off";
+  document.getElementById("bg2").className = "bg2_off";
+  document.getElementById("bg3").className = "bg3_on";
+  document.getElementById("bg4").className = "bg4_off";
+  document.getElementById("bg5").className = "bg5_off";
+  document.getElementById("bg6").className = "bg6_off";
+  document.getElementById("bg7").className = "bg7_off";
+  time_frame = '1Y'
+  // Get the data again
+  d3.csv("Indexes.csv", function(error, data) {
+        data.forEach(function(d) {
+          d.Date = parseDate(d.Date);
+          d.Fintech = +d.Fintech;
+          d.FAANG = +d.FAANG;
+          d.NASDAQ = +d.NASDAQ;
+          d.SNP500= +d.SNP500;
+          // d.EMCLOUD = +d.EMCLOUD;
+      });
+      var possible_comps_filtered = possible_companies.filter(function (el) {
+          return (removeType.indexOf(el.type) < 0)&(removeVerticals.indexOf(el.vertical) < 0); 
+        });
+        proper_tickers = possible_comps_filtered.map(a => a.ticker)
+        new_ft = ft_companies.map(function(a) {return _.pick(a,proper_tickers)}).map(function(i){return Object.values(i).filter(function(x) {return x !== ""}).map(i=>Number(i))}).map(function(i){return average(i)}).map(function(x){return x-1})
+        // console.log(new_ft);
+        for(var i = 0; i < new_ft.length; i += 1) {
+          data[i].Fintech = new_ft[i];
+        }
+        // var today = new Date();
+        // today.setFullYear(today.getFullYear()-3);
+        // console.log(today.toLocaleDateString())
+        var dateTresh = new Date();
+        dateTresh.setDate(dateTresh.getDate() - 1);
+        // var nextMonth = today.add('month', 1);
+        dateTresh.setFullYear(dateTresh.getFullYear()-1);
+        var data = data.filter(function (el) {
+          return el.Date > dateTresh;
+        });
+        var first_ft_val = data[0].Fintech
+        var first_faang_val = data[0].FAANG
+        var first_nasdaq_val = data[0].NASDAQ
+        var first_snp_val = data[0].SNP500
+        data.map((d) => {
+          d.Fintech = ((d.Fintech+1)/(first_ft_val+1))-1
+          d.FAANG = ((d.FAANG+1)/(first_faang_val+1))-1
+          d.NASDAQ = ((d.NASDAQ+1)/(first_nasdaq_val+1))-1
+          d.SNP500 = ((d.SNP500+1)/(first_snp_val+1))-1
+          return data;
+        });
+      // Scale the range of the data again 
+      x.domain(d3.extent(data, function(d) { return d.Date; }));
+      if (window.innerWidth<780){
+        y.domain([d3.min(data, function(d) {return Math.min(d.NASDAQ, d.FAANG, d.Fintech, d.SNP500); })-.3, d3.max(data, function(d) { return Math.max(d.NASDAQ, d.FAANG, d.Fintech, d.SNP500); })*2.2]);
+      }
+      else{
+        y.domain([d3.min(data, function(d) {return Math.min(d.NASDAQ, d.FAANG, d.Fintech, d.SNP500); })-.3, d3.max(data, function(d) { return Math.max(d.NASDAQ, d.FAANG, d.Fintech, d.SNP500); })*1.5]);
+      }
+      
+      document.getElementById("fintechValueJS").innerHTML = ((data[data.length-1].Fintech*100)<0?"":"+") + (data[data.length-1].Fintech*100).toFixed(1); 
+      document.getElementById("faangValueJS").innerHTML = ((data[data.length-1].FAANG*100)<0?"":"+") + (data[data.length-1].FAANG*100).toFixed(1);
+      document.getElementById("nasdaqValueJS").innerHTML = ((data[data.length-1].NASDAQ*100)<0?"":"+") + (data[data.length-1].NASDAQ*100).toFixed(1);
+      document.getElementById("snp500ValueJS").innerHTML = ((data[data.length-1].SNP500*100)<0?"":"+") + (data[data.length-1].SNP500*100).toFixed(1);
+      // document.getElementById("emCloudValueJS").innerHTML = ((data[data.length-1].SNP500*100)<0?"":"+") + (data[data.length-1].EMCLOUD*100).toFixed(1);
+      dataVar = data;
+      DateVar = data.Date;
+      FintechVar = data.Fintech; 
+      FAANGVar = data.FAANG;
+      NASDAQVar = data.NASDAQ;
+      SNP500VAR = data.SNP500;
+      // EMCLOUDVAR = data.EMCLOUD;
+  // Select the section we want to apply our changes to
+      var svg = d3.select("body").transition();
+
+  // Make the changes
+      svg.select(".line")   // change the line
+          .duration(750)
+          .attr("class", "line")
+          .style("stroke", "#5B56EE")
+          .attr("d", valueline(data));
+      svg.select(".line2")   // change the line
+          .duration(750)
+          .attr("class", "line2")
+          .style("stroke", "#A6D0D8")
+          .attr("d", valueline2(data));
+      svg.select(".line3")   // change the line
+          .duration(750)
+          .attr("class", "line3")
+          .style("stroke", "black")
+          .attr("d", valueline3(data));
+      svg.select(".line4")   // change the line
+          .duration(750)
+          .attr("class", "line4")
+          .style("stroke", "#FC714D")
+          .attr("d", valueline4(data));
+      // svg.select(".line5")   // change the line
+      //     .duration(750)
+      //     .attr("class", "line5")
+      //     .style("stroke", "#A9A9A9")
+      //     .attr("d", valueline5(data));   
+      svg.select(".x.axis") // change the x axis
+          .duration(750)
+          .call(xAxis.tickFormat(d3.time.format("%b")));
+      svg.select(".y.axis") // change the y axis
+          .duration(750)
+          .call(yAxis);
+      var focus = svg.select('.focus');
+      // var htmlString = document.getElementsByClassName('.tooltip-snp')[0].innerHTML;
+      // focus.select("circle")
+      //     .attr("r", 5);
+    
+      // var htmlString = focus[0][0];
+      // console.log(htmlString);
+      // console.log(focus.select(".tooltip-snp"));
+      // console.log("Hello world!");
+      // var mouseOverlay = svg.select(".mouseOverlay");
+      // console.log(mouseOverlay[0][0]);
+      // mouseOverlay.attr("width", width)
+      //     .attr("height", height)
+      //     .attr("mouseover", function() { focus.style('display',null); })
+      //     .attr("mouseout", function() { focus.attr("style","display: none; position: absolute;"); })
+      //     .attr("mousemove", function(){var x0 = x.invert(d3.mouse(this)[0]); mousemove1(data, data.Date, data.Fintech, data.FAANG, data.NASDAQ, data.SNP500,focus,x0);});
+
+  });
+}
+
+function updateYTD() {
+document.getElementById("bg1").className = "bg1_off";
+document.getElementById("bg2").className = "bg2_off";
+document.getElementById("bg3").className = "bg3_off";
+document.getElementById("bg4").className = "bg4_on";
+document.getElementById("bg5").className = "bg5_off";
+document.getElementById("bg6").className = "bg6_off";
+document.getElementById("bg7").className = "bg7_off";
+time_frame = 'YTD'
+// Get the data again
+d3.csv("Indexes.csv", function(error, data) {
+       data.forEach(function(d) {
+        d.Date = parseDate(d.Date);
+        d.Fintech = +d.Fintech;
+        d.FAANG = +d.FAANG;
+        d.NASDAQ = +d.NASDAQ;
+        d.SNP500= +d.SNP500;
+        // d.EMCLOUD = +d.EMCLOUD;
+    });
+    var possible_comps_filtered = possible_companies.filter(function (el) {
+        return (removeType.indexOf(el.type) < 0)&(removeVerticals.indexOf(el.vertical) < 0); 
+      });
+      proper_tickers = possible_comps_filtered.map(a => a.ticker)
+      new_ft = ft_companies.map(function(a) {return _.pick(a,proper_tickers)}).map(function(i){return Object.values(i).filter(function(x) {return x !== ""}).map(i=>Number(i))}).map(function(i){return average(i)}).map(function(x){return x-1})
+      // console.log(new_ft);
+      for(var i = 0; i < new_ft.length; i += 1) {
+        data[i].Fintech = new_ft[i];
+      }
+      // var today = new Date();
+      // today.setFullYear(today.getFullYear()-3);
+      // console.log(today.toLocaleDateString())
+      var dateTresh = new Date(new Date().getFullYear(), 0, 1);
+      var data = data.filter(function (el) {
+        return el.Date > dateTresh;
+      });
+      var first_ft_val = data[0].Fintech
+      var first_faang_val = data[0].FAANG
+      var first_nasdaq_val = data[0].NASDAQ
+      var first_snp_val = data[0].SNP500
+      data.map((d) => {
+        d.Fintech = ((d.Fintech+1)/(first_ft_val+1))-1
+        d.FAANG = ((d.FAANG+1)/(first_faang_val+1))-1
+        d.NASDAQ = ((d.NASDAQ+1)/(first_nasdaq_val+1))-1
+        d.SNP500 = ((d.SNP500+1)/(first_snp_val+1))-1
+        return data;
+      });
+    // Scale the range of the data again 
+    x.domain(d3.extent(data, function(d) { return d.Date; }));
+    if (window.innerWidth<780){
+      y.domain([d3.min(data, function(d) {return Math.min(d.NASDAQ, d.FAANG, d.Fintech, d.SNP500); })-.3, d3.max(data, function(d) { return Math.max(d.NASDAQ, d.FAANG, d.Fintech, d.SNP500); })*2.2]);
+    }
+    else{
+      y.domain([d3.min(data, function(d) {return Math.min(d.NASDAQ, d.FAANG, d.Fintech, d.SNP500); })-.3, d3.max(data, function(d) { return Math.max(d.NASDAQ, d.FAANG, d.Fintech, d.SNP500); })*1.5]);
+    }
+    
+    document.getElementById("fintechValueJS").innerHTML = ((data[data.length-1].Fintech*100)<0?"":"+") + (data[data.length-1].Fintech*100).toFixed(1); 
+    document.getElementById("faangValueJS").innerHTML = ((data[data.length-1].FAANG*100)<0?"":"+") + (data[data.length-1].FAANG*100).toFixed(1);
+    document.getElementById("nasdaqValueJS").innerHTML = ((data[data.length-1].NASDAQ*100)<0?"":"+") + (data[data.length-1].NASDAQ*100).toFixed(1);
+    document.getElementById("snp500ValueJS").innerHTML = ((data[data.length-1].SNP500*100)<0?"":"+") + (data[data.length-1].SNP500*100).toFixed(1);
+    // document.getElementById("emCloudValueJS").innerHTML = ((data[data.length-1].SNP500*100)<0?"":"+") + (data[data.length-1].EMCLOUD*100).toFixed(1);
+    dataVar = data;
+    DateVar = data.Date;
+    FintechVar = data.Fintech; 
+    FAANGVar = data.FAANG;
+    NASDAQVar = data.NASDAQ;
+    SNP500VAR = data.SNP500;
+    // EMCLOUDVAR = data.EMCLOUD;
+// Select the section we want to apply our changes to
+var svg = d3.select("body").transition();
+
+// Make the changes
+    svg.select(".line")   // change the line
+        .duration(750)
+        .attr("class", "line")
+        .style("stroke", "#5B56EE")
+        .attr("d", valueline(data));
+    svg.select(".line2")   // change the line
+        .duration(750)
+        .attr("class", "line2")
+        .style("stroke", "#A6D0D8")
+        .attr("d", valueline2(data));
+    svg.select(".line3")   // change the line
+        .duration(750)
+        .attr("class", "line3")
+        .style("stroke", "black")
+        .attr("d", valueline3(data));
+    svg.select(".line4")   // change the line
+        .duration(750)
+        .attr("class", "line4")
+        .style("stroke", "#FC714D")
+        .attr("d", valueline4(data));
+    // svg.select(".line5")   // change the line
+    //     .duration(750)
+    //     .attr("class", "line5")
+    //     .style("stroke", "#A9A9A9")
+    //     .attr("d", valueline5(data));   
+    svg.select(".x.axis") // change the x axis
+        .duration(750)
+        .call(xAxis.tickFormat(d3.time.format("%b")));
+    svg.select(".y.axis") // change the y axis
+        .duration(750)
+        .call(yAxis);
+    var focus = svg.select('.focus');
+    // var htmlString = document.getElementsByClassName('.tooltip-snp')[0].innerHTML;
+    // focus.select("circle")
+    //     .attr("r", 5);
+   
+    // var htmlString = focus[0][0];
+    // console.log(htmlString);
+    // console.log(focus.select(".tooltip-snp"));
+    // console.log("Hello world!");
+    // var mouseOverlay = svg.select(".mouseOverlay");
+    // console.log(mouseOverlay[0][0]);
+    // mouseOverlay.attr("width", width)
+    //     .attr("height", height)
+    //     .attr("mouseover", function() { focus.style('display',null); })
+    //     .attr("mouseout", function() { focus.attr("style","display: none; position: absolute;"); })
+    //     .attr("mousemove", function(){var x0 = x.invert(d3.mouse(this)[0]); mousemove1(data, data.Date, data.Fintech, data.FAANG, data.NASDAQ, data.SNP500,focus,x0);});
+
+});
+}
+
+function update6M() {
+document.getElementById("bg1").className = "bg1_off";
+document.getElementById("bg2").className = "bg2_off";
+document.getElementById("bg3").className = "bg3_off";
+document.getElementById("bg4").className = "bg4_off";
+document.getElementById("bg5").className = "bg5_on";
+document.getElementById("bg6").className = "bg6_off";
+document.getElementById("bg7").className = "bg7_off";
+    time_frame = '6M'
+    // Get the data again
+    d3.csv("Indexes.csv", function(error, data) {
+       	data.forEach(function(d) {
+            d.Date = parseDate(d.Date);
+            d.Fintech = +d.Fintech;
+            d.FAANG = +d.FAANG;
+            d.NASDAQ = +d.NASDAQ;
+            d.SNP500= +d.SNP500;
+            // d.EMCLOUD = +d.EMCLOUD;
+	    });
+      var possible_comps_filtered = possible_companies.filter(function (el) {
+        return (removeType.indexOf(el.type) < 0)&(removeVerticals.indexOf(el.vertical) < 0); 
+      });
+      proper_tickers = possible_comps_filtered.map(a => a.ticker)
+      new_ft = ft_companies.map(function(a) {return _.pick(a,proper_tickers)}).map(function(i){return Object.values(i).filter(function(x) {return x !== ""}).map(i=>Number(i))}).map(function(i){return average(i)}).map(function(x){return x-1})
+      // console.log(new_ft);
+      for(var i = 0; i < new_ft.length; i += 1) {
+        data[i].Fintech = new_ft[i];
+      }
+      // var today = new Date();
+      // today.setFullYear(today.getFullYear()-3);
+      // console.log(today.toLocaleDateString())
+      var dateTresh = new Date();
+      dateTresh.setDate(dateTresh.getDate() - 1);
+      // var nextMonth = today.add('month', 1);
+      dateTresh.setMonth(dateTresh.getMonth()-6);
+      var data = data.filter(function (el) {
+        return el.Date > dateTresh;
+      });
+      var first_ft_val = data[0].Fintech
+      var first_faang_val = data[0].FAANG
+      var first_nasdaq_val = data[0].NASDAQ
+      var first_snp_val = data[0].SNP500
+      data.map((d) => {
+        d.Fintech = ((d.Fintech+1)/(first_ft_val+1))-1
+        d.FAANG = ((d.FAANG+1)/(first_faang_val+1))-1
+        d.NASDAQ = ((d.NASDAQ+1)/(first_nasdaq_val+1))-1
+        d.SNP500 = ((d.SNP500+1)/(first_snp_val+1))-1
+        return data;
+      });
+    	// Scale the range of the data again 
+    	x.domain(d3.extent(data, function(d) { return d.Date; }));
+      if (window.innerWidth<780){
+        y.domain([d3.min(data, function(d) {return Math.min(d.NASDAQ, d.FAANG, d.Fintech, d.SNP500); })-.3, d3.max(data, function(d) { return Math.max(d.NASDAQ, d.FAANG, d.Fintech, d.SNP500); })*3]);
+      }
+      else{
+        y.domain([d3.min(data, function(d) {return Math.min(d.NASDAQ, d.FAANG, d.Fintech, d.SNP500); })-.3, d3.max(data, function(d) { return Math.max(d.NASDAQ, d.FAANG, d.Fintech, d.SNP500); })*2]);
+      }
+      
+      document.getElementById("fintechValueJS").innerHTML = ((data[data.length-1].Fintech*100)<0?"":"+") + (data[data.length-1].Fintech*100).toFixed(1); 
+      document.getElementById("faangValueJS").innerHTML = ((data[data.length-1].FAANG*100)<0?"":"+") + (data[data.length-1].FAANG*100).toFixed(1);
+      document.getElementById("nasdaqValueJS").innerHTML = ((data[data.length-1].NASDAQ*100)<0?"":"+") + (data[data.length-1].NASDAQ*100).toFixed(1);
+      document.getElementById("snp500ValueJS").innerHTML = ((data[data.length-1].SNP500*100)<0?"":"+") + (data[data.length-1].SNP500*100).toFixed(1);
+      // document.getElementById("emCloudValueJS").innerHTML = ((data[data.length-1].SNP500*100)<0?"":"+") + (data[data.length-1].EMCLOUD*100).toFixed(1);
+      dataVar = data;
+      DateVar = data.Date;
+      FintechVar = data.Fintech; 
+      FAANGVar = data.FAANG;
+      NASDAQVar = data.NASDAQ;
+      SNP500VAR = data.SNP500;
+      // EMCLOUDVAR = data.EMCLOUD;
+    // Select the section we want to apply our changes to
+    var svg = d3.select("body").transition();
+
+    // Make the changes
+        svg.select(".line")   // change the line
+            .duration(750)
+            .attr("class", "line")
+            .style("stroke", "#5B56EE")
+            .attr("d", valueline(data));
+        svg.select(".line2")   // change the line
+            .duration(750)
+            .attr("class", "line2")
+            .style("stroke", "#A6D0D8")
+            .attr("d", valueline2(data));
+        svg.select(".line3")   // change the line
+            .duration(750)
+            .attr("class", "line3")
+            .style("stroke", "black")
+            .attr("d", valueline3(data));
+        svg.select(".line4")   // change the line
+            .duration(750)
+            .attr("class", "line4")
+            .style("stroke", "#FC714D")
+            .attr("d", valueline4(data));
+        // svg.select(".line5")   // change the line
+        //     .duration(750)
+        //     .attr("class", "line5")
+        //     .style("stroke", "#A9A9A9")
+        //     .attr("d", valueline5(data));        
+        svg.select(".x.axis") // change the x axis
+            .duration(750)
+            .call(xAxis.tickFormat(d3.time.format("%b")));
+        svg.select(".y.axis") // change the y axis
+            .duration(750)
+            .call(yAxis);
+    });
+}
+function updateMonthly() {
+document.getElementById("bg1").className = "bg1_off";
+document.getElementById("bg2").className = "bg2_off";
+document.getElementById("bg3").className = "bg3_off";
+document.getElementById("bg4").className = "bg4_off";
+document.getElementById("bg5").className = "bg5_off";
+document.getElementById("bg6").className = "bg6_on";
+document.getElementById("bg7").className = "bg7_off";
+time_frame = '1M'
+// Get the data again
+d3.csv("Indexes.csv", function(error, data) {
+       data.forEach(function(d) {
+        d.Date = parseDate(d.Date);
+        d.Fintech = +d.Fintech;
+        d.FAANG = +d.FAANG;
+        d.NASDAQ = +d.NASDAQ;
+        d.SNP500= +d.SNP500;
+        // d.EMCLOUD = +d.EMCLOUD;
+    });
+    var possible_comps_filtered = possible_companies.filter(function (el) {
+        return (removeType.indexOf(el.type) < 0)&(removeVerticals.indexOf(el.vertical) < 0); 
+      });
+      proper_tickers = possible_comps_filtered.map(a => a.ticker)
+      new_ft = ft_companies.map(function(a) {return _.pick(a,proper_tickers)}).map(function(i){return Object.values(i).filter(function(x) {return x !== ""}).map(i=>Number(i))}).map(function(i){return average(i)}).map(function(x){return x-1})
+      // console.log(new_ft);
+      for(var i = 0; i < new_ft.length; i += 1) {
+        data[i].Fintech = new_ft[i];
+      }
+      // var today = new Date();
+      // today.setFullYear(today.getFullYear()-3);
+      // console.log(today.toLocaleDateString())
+      var dateTresh = new Date();
+      dateTresh.setDate(dateTresh.getDate() - 1);
+      // var nextMonth = today.add('month', 1);
+      dateTresh.setMonth(dateTresh.getMonth()-1);
+      var data = data.filter(function (el) {
+        return el.Date > dateTresh;
+      });
+      var first_ft_val = data[0].Fintech
+      var first_faang_val = data[0].FAANG
+      var first_nasdaq_val = data[0].NASDAQ
+      var first_snp_val = data[0].SNP500
+      data.map((d) => {
+        d.Fintech = ((d.Fintech+1)/(first_ft_val+1))-1
+        d.FAANG = ((d.FAANG+1)/(first_faang_val+1))-1
+        d.NASDAQ = ((d.NASDAQ+1)/(first_nasdaq_val+1))-1
+        d.SNP500 = ((d.SNP500+1)/(first_snp_val+1))-1
+        return data;
+      });
+    // Scale the range of the data again 
+    x.domain(d3.extent(data, function(d) { return d.Date; }));
+    if (window.innerWidth<780){
+      y.domain([d3.min(data, function(d) {return Math.min(d.NASDAQ, d.FAANG, d.Fintech, d.SNP500); })-.3, d3.max(data, function(d) { return Math.max(d.NASDAQ, d.FAANG, d.Fintech, d.SNP500); })+.4]);
+    }
+    else{
+      y.domain([d3.min(data, function(d) {return Math.min(d.NASDAQ, d.FAANG, d.Fintech, d.SNP500); })-.3, d3.max(data, function(d) { return Math.max(d.NASDAQ, d.FAANG, d.Fintech, d.SNP500); })+.3]);
+    }
+    document.getElementById("fintechValueJS").innerHTML = ((data[data.length-1].Fintech*100)<0?"":"+") + (data[data.length-1].Fintech*100).toFixed(1); 
+    document.getElementById("faangValueJS").innerHTML = ((data[data.length-1].FAANG*100)<0?"":"+") + (data[data.length-1].FAANG*100).toFixed(1);
+    document.getElementById("nasdaqValueJS").innerHTML = ((data[data.length-1].NASDAQ*100)<0?"":"+") + (data[data.length-1].NASDAQ*100).toFixed(1);
+    document.getElementById("snp500ValueJS").innerHTML = ((data[data.length-1].SNP500*100)<0?"":"+") + (data[data.length-1].SNP500*100).toFixed(1);
+    // document.getElementById("emCloudValueJS").innerHTML = ((data[data.length-1].SNP500*100)<0?"":"+") + (data[data.length-1].EMCLOUD*100).toFixed(1);
+    dataVar = data;
+    DateVar = data.Date;
+    FintechVar = data.Fintech; 
+    FAANGVar = data.FAANG;
+    NASDAQVar = data.NASDAQ;
+    SNP500VAR = data.SNP500;
+    // EMCLOUDVAR = data.EMCLOUD;
+// Select the section we want to apply our changes to
+var svg = d3.select("body").transition();
+
+// Make the changes
+    svg.select(".line")   // change the line
+        .duration(750)
+        .attr("class", "line")
+        .style("stroke", "#5B56EE")
+        .attr("d", valueline(data));
+    svg.select(".line2")   // change the line
+        .duration(750)
+        .attr("class", "line2")
+        .style("stroke", "#A6D0D8")
+        .attr("d", valueline2(data));
+    svg.select(".line3")   // change the line
+        .duration(750)
+        .attr("class", "line3")
+        .style("stroke", "black")
+        .attr("d", valueline3(data));
+    svg.select(".line4")   // change the line
+        .duration(750)
+        .attr("class", "line4")
+        .style("stroke", "#FC714D")
+        .attr("d", valueline4(data));
+    // svg.select(".line5")   // change the line
+    //     .duration(750)
+    //     .attr("class", "line5")
+    //     .style("stroke", "#A9A9A9")
+    //     .attr("d", valueline5(data));   
+    svg.select(".x.axis") // change the x axis
+        .duration(750)
+        .call(xAxis.tickFormat(d3.time.format("%x")).ticks(5));
+    svg.select(".y.axis") // change the y axis
+        .duration(750)
+        .call(yAxis);
+
+});
+}
+
+function updateWeekly() {
+document.getElementById("bg1").className = "bg1_off";
+document.getElementById("bg2").className = "bg2_off";
+document.getElementById("bg3").className = "bg3_off";
+document.getElementById("bg4").className = "bg4_off";
+document.getElementById("bg5").className = "bg5_off";
+document.getElementById("bg6").className = "bg6_off";
+document.getElementById("bg7").className = "bg7_on";
+time_frame = '1W'
+// Get the data again
+d3.csv("Indexes.csv", function(error, data) {
+       data.forEach(function(d) {
+        d.Date = parseDate(d.Date);
+        d.Fintech = +d.Fintech;
+        d.FAANG = +d.FAANG;
+        d.NASDAQ = +d.NASDAQ;
+        d.SNP500= +d.SNP500;
+        // d.EMCLOUD = +d.EMCLOUD;
+    });
+    // console.log(data)
+    var possible_comps_filtered = possible_companies.filter(function (el) {
+        return (removeType.indexOf(el.type) < 0)&(removeVerticals.indexOf(el.vertical) < 0); 
+      });
+      proper_tickers = possible_comps_filtered.map(a => a.ticker)
+      new_ft = ft_companies.map(function(a) {return _.pick(a,proper_tickers)}).map(function(i){return Object.values(i).filter(function(x) {return x !== ""}).map(i=>Number(i))}).map(function(i){return average(i)}).map(function(x){return x-1})
+      // console.log(new_ft);
+      for(var i = 0; i < new_ft.length; i += 1) {
+        data[i].Fintech = new_ft[i];
+      }
+      // var today = new Date();
+      // today.setFullYear(today.getFullYear()-3);
+      // console.log(today.toLocaleDateString())
+      var dateTresh = new Date();
+      dateTresh.setDate(dateTresh.getDate() - 8);
+      // var nextMonth = today.add('month', 1);
+      var data = data.filter(function (el) {
+        return el.Date > dateTresh;
+      });
+      console.log(data)
+      var first_ft_val = data[0].Fintech
+      var first_faang_val = data[0].FAANG
+      var first_nasdaq_val = data[0].NASDAQ
+      var first_snp_val = data[0].SNP500
+      data.map((d) => {
+        d.Fintech = ((d.Fintech+1)/(first_ft_val+1))-1
+        d.FAANG = ((d.FAANG+1)/(first_faang_val+1))-1
+        d.NASDAQ = ((d.NASDAQ+1)/(first_nasdaq_val+1))-1
+        d.SNP500 = ((d.SNP500+1)/(first_snp_val+1))-1
+        return data;
+      });
+    // Scale the range of the data again 
+    x.domain(d3.extent(data, function(d) { return d.Date; }));
+    if (window.innerWidth<780){
+      y.domain([d3.min(data, function(d) {return Math.min(d.NASDAQ, d.FAANG, d.Fintech, d.SNP500); })-.2, d3.max(data, function(d) { return Math.max(d.NASDAQ, d.FAANG, d.Fintech, d.SNP500); })+.3]);
+    }
+    else{
+      y.domain([d3.min(data, function(d) {return Math.min(d.NASDAQ, d.FAANG, d.Fintech, d.SNP500); })-.2, d3.max(data, function(d) { return Math.max(d.NASDAQ, d.FAANG, d.Fintech, d.SNP500); })+.2]);
+    }
+    
+    document.getElementById("fintechValueJS").innerHTML = ((data[data.length-1].Fintech*100)<0?"":"+") + (data[data.length-1].Fintech*100).toFixed(1); 
+    document.getElementById("faangValueJS").innerHTML = ((data[data.length-1].FAANG*100)<0?"":"+") + (data[data.length-1].FAANG*100).toFixed(1);
+    document.getElementById("nasdaqValueJS").innerHTML = ((data[data.length-1].NASDAQ*100)<0?"":"+") + (data[data.length-1].NASDAQ*100).toFixed(1);
+    document.getElementById("snp500ValueJS").innerHTML = ((data[data.length-1].SNP500*100)<0?"":"+") + (data[data.length-1].SNP500*100).toFixed(1);
+    // document.getElementById("emCloudValueJS").innerHTML = ((data[data.length-1].SNP500*100)<0?"":"+") + (data[data.length-1].EMCLOUD*100).toFixed(1);
+
+    dataVar = data;
+    DateVar = data.Date;
+    FintechVar = data.Fintech; 
+    FAANGVar = data.FAANG;
+    NASDAQVar = data.NASDAQ;
+    SNP500VAR = data.SNP500;
+    // EMCLOUDVAR = data.EMCLOUD;
+// Select the section we want to apply our changes to
+var svg = d3.select("body").transition();
+
+// Make the changes
+    svg.select(".line")   // change the line
+        .duration(750)
+        .attr("class", "line")
+        .style("stroke", "#5B56EE")
+        .attr("d", valueline(data));
+    svg.select(".line2")   // change the line
+        .duration(750)
+        .attr("class", "line2")
+        .style("stroke", "#A6D0D8")
+        .attr("d", valueline2(data));
+    svg.select(".line3")   // change the line
+        .duration(750)
+        .attr("class", "line3")
+        .style("stroke", "black")
+        .attr("d", valueline3(data));
+    svg.select(".line4")   // change the line
+        .duration(750)
+        .attr("class", "line4")
+        .style("stroke", "#FC714D")
+        .attr("d", valueline4(data));
+
+    // svg.select(".line5")   // change the line
+    //     .duration(750)
+    //     .attr("class", "line5")
+    //     .style("stroke", "#A9A9A9")
+    //     .attr("d", valueline5(data));   
+      
+    svg.select(".x.axis") // change the x axis
+        .duration(750)
+        .call(xAxis.tickFormat(d3.time.format("%x")).ticks(5));
+    svg.select(".y.axis") // change the y axis
+        .duration(750)
+        .call(yAxis);
+
+});
+}
+d3.csv("key_figures.csv", function(error, data2) {
+          data2.forEach(function(d) {
+            d[0] = d[0];
+        });
+    document.getElementById("keyValTMarketCap").innerHTML = data2[0][0];
+    document.getElementById("keyValAMarketCap").innerHTML = data2[1][0];
+    document.getElementById("keyValRevMult").innerHTML = data2[2][0];
+    document.getElementById("keyValRevGrowth").innerHTML = data2[3][0];
+      });
+      
+  </script>
+
+<div class="legend" id="performance">
+  <div>
+    <li><span class="fintech_legend"></span> Fintech</li>
+    <li><span class="faang_legend"></span> FAANG</li>
+    <li><span class="nasdaq_legend"></span> NASDAQ</li>
+    <li><span class="snp500_legend"></span> S&P500</li>
+  </div>
+</div>
+<!-- <ul class="legend" id="performance">
+  <li><span class="fintech_legend"></span> Fintech</li>
+  <li><span class="faang_legend"></span> FAANG</li>
+  <li><span class="nasdaq_legend"></span> NASDAQ</li>
+  <li><span class="snp500_legend"></span> S&P500</li>
+</ul> -->
+
+<!-- <script>
+         
+    var margin = {top: 20, right: 20, bottom: 30, left: 150},
+    width = 1350 - margin.left - margin.right,
+    height = 600 - margin.top - margin.bottom;
+
+// parse the date / time
+var parseDate = d3.time.format("%Y-%m-%d").parse;
+
+// set the ranges
+var x = d3.scaleTime().range([0, width]);
+var y = d3.scaleLinear().range([height,0]);
+
+var formatPercent = d3.format("+.0%"),
+    formatChange = function(x) { return formatPercent(x - 1); },
+    parseDate = d3.time.format("%Y-%m-%d").parse;
+
+// define the 1st line
+var valueline = d3.line()
+    .x(function(d) { return x(d.Date); })
+    .y(function(d) { return y(d.NASDAQ); });
+
+// define the 2nd line
+var valueline2 = d3.line()
+    .x(function(d) { return x(d.Date); })
+    .y(function(d) { return y(d.Fintech); });
+
+var valueline3 = d3.line()
+    .x(function(d) { return x(d.Date); })
+    .y(function(d) { return y(d.FAANG); });
+
+var valueline4 = d3.line()
+    .x(function(d) { return x(d.Date); })
+    .y(function(d) { return y(d.SNP500); });
+
+// append the svg obgect to the body of the page
+// appends a 'group' element to 'svg'
+// moves the 'group' element to the top left margin
+var svg = d3.select("body").append("svg")
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+  .append("g")
+    .attr("transform",
+          "translate(" + margin.left + "," + margin.top + ")");
+function updateDataYear() {
+// Get the data
+d3.csv("Indexes.csv", function(error, data) {
+      data.forEach(function(d) {
+          d.Date = parseDate(d.Date);
+          d.FinTech = +d.FinTech;
+          d.FAANG = +d.FAANG;
+          d.SNP500 = +d.SNP500;
+          d.NASDAQ = +d.NASDAQ;
+    
+      });
+
+  // Scale the range of the data
+  x.domain(d3.extent(data, function(d) { return d.Date; }));
+  y.domain([0, d3.max(data, function(d) {
+	  return Math.max(d.Fintech, d.NASDAQ, d.FAANG, d.SNP500); })]);
+
+  // Add the valueline path.
+  svg.append("path")
+      .data([data])
+      .attr("class", "line")
+      .style("stroke", '#5B56EE')
+      .attr("d", valueline);
+
+  // Add the valueline2 path.
+  svg.append("path")
+      .data([data])
+      .attr("class", "line")
+      .style("stroke", "#FC714D")
+      .attr("d", valueline2);
+
+      svg.append("path")
+      .data([data])
+      .attr("class", "line")
+      .style("stroke", "#1F1F1F")
+      .attr("d", valueline4);
+
+
+  svg.append("path")
+      .data([data])
+      .attr("class", "line")
+      .style("stroke", '#A6D0D8')
+      .attr("d", valueline3);
+
+  // Add the valueline2 path.
+  
+
+  // Add the X Axis
+  svg.append("g")
+      .attr("transform", "translate(0," + height + ")")
+      .call(d3.axisBottom(x));
+
+  // Add the Y Axis
+  svg.append("g")
+      .call(d3.axisLeft(y));
+    
+  
+  });
+}s
+
+  function updateDataMonth() {
+    d3.csv("IndexesMonth.csv", function(error, data) {
+      data.forEach(function(d) {
+          d.Date = parseDate(d.Date);
+          d.FinTech = +d.FinTech;
+          d.FAANG = +d.FAANG;
+          d.SNP500 = +d.SNP500;
+          d.NASDAQ = +d.NASDAQ;
+    
+      });
+
+  // Scale the range of the data
+  x.domain(d3.extent(data, function(d) { return d.Date; }));
+  y.domain([0, d3.max(data, function(d) {
+	  return Math.max(d.Fintech, d.NASDAQ, d.FAANG, d.SNP500); })]);
+
+  // Add the valueline path.
+  svg.append("path")
+      .data([data])
+      .attr("class", "line")
+      .style("stroke", '#5B56EE')
+      .attr("d", valueline);
+
+  // Add the valueline2 path.
+  svg.append("path")
+      .data([data])
+      .attr("class", "line")
+      .style("stroke", "#FC714D")
+      .attr("d", valueline2);
+
+
+  svg.append("path")
+      .data([data])
+      .attr("class", "line")
+      .style("stroke", '#A6D0D8')
+      .attr("d", valueline3);
+
+  // Add the valueline2 path.
+  svg.append("path")
+      .data([data])
+      .attr("class", "line")
+      .style("stroke", "#1F1F1F")
+      .attr("d", valueline4);
+
+  // Add the X Axis
+  svg.append("g")
+      .attr("transform", "translate(0," + height + ")")
+      .call(d3.axisBottom(x));
+
+  // Add the Y Axis
+  svg.append("g")
+      .call(d3.axisLeft(y).tickFormat(formatChange));
+    
+  
+
+
+});
+}
+      
+
+</script> -->
+<!-- <div class='statistics'>
+  <p class="legendflex">
+    <span class="nasdaq-dot"></span>
+    <span class="nasdaq-dot"></span>
+    <span class="nasdaq-dot"></span>
+  </p>
+</div> -->
+
+
+
+
+</div>
+
+
+
+    <div class='statistics'>
+      <!-- <table class="table table-dark table-bordered border-white">
+        <thead>
+          <p class="filter-news__category">The F-Prime Fintech Index is designed to track the performance of emerging, publicly traded financial technology companies. </p>
+          <br /> <br /> 
+          <tr>
+            <td class="table-dark table-bordered border-white"> 
+              <div class='overview'>TOTAL MARKET CAP<h1>740B</h1> </div>
+              <br /> <br /> <br /> <br /> <br /> </td>
+             <td class="table-dark table-bordered border-white"> 
+              <div class='overview'>AVERAGE MARKET CAP<h1>13B</h1> </div>
+              </td>
+            <td class="table-dark table-bordered border-white">
+              <div class='overview'>AVERAGE REVENUE MULTIPLE<h1>21.4x</h1> </div>
+              </td>
+            <td class="table-dark table-bordered border-white">
+              <div class='overview'>AVERAGE REVENUE GROWTH RATE<h1>41.6%</h1>  </div>
+              </td>
+          </tr>
+        </thead>
+      </table> -->
+      <div class="flex_background">
+        <div class="flex">
+          <div>TOTAL MARKET CAP <br> <span style="font-size: 250%;" id = "keyValTMarketCap"></span></div>
+          <div class = 'parallelogram_stats'></div>
+          <div>AVG. MARKET CAP <br> <span style="font-size: 250%;" id = "keyValAMarketCap"></span></div>
+          <div class = 'parallelogram_stats'></div>
+          <div>AVG. REVENUE MULTIPLE <br> <span style="font-size: 250%;" id = "keyValRevMult"></span></div>
+          <div class = 'parallelogram_stats'></div>
+          <div>AVG. REVENUE GROWTH <br> <span style="font-size: 250%;" id = "keyValRevGrowth"></span></div>
+        </div>
+      </div>
+    </div>
+  
+
+    <p id="finalTable"></p>
+
+
+
+
+</div>
+<div class="section_headers_div">
+  <h2 class="section_headers" id = "companies">All Companies</h2>
+</div>
+
+<!-- <div id="DivContent"></div> -->
+
+<!-- The MIT License (MIT)
+
+Copyright (c) 2018 Derek Eder
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE. -->
+
+<!-- https://github.com/derekeder/csv-to-html-table -->
+
+<div class="container-fluid">
+  <!-- <h2 class="section_headers" style = "margin-bottom: -2%;">All Companies</h2> -->
+  <main class="row">
+      <div class="col">
+          <div id="table-container" class = "table-design"></div>
+      </div>
+  </main>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.bundle.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="jquery.csv.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+
+<script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
+<script src="csv-to-html-table.js"></script>
+
+<script>
+  function format_link(link) {
+      if (link)
+          return "<a href='" + link + "' target='_blank'>" + link + "</a>";
+      else return "";
+  }
+
+  CsvToHtmlTable.init({
+      csv_path: "FinTech_key_data_output.csv",
+      element: "table-container",
+      allow_download: true,
+      csv_options: {
+          separator: ",",
+          delimiter: '"'
+      },
+      datatables_options: {
+          paging: false,
+          info: false,
+          column:[{data: 'Price ($)',render: function ( data, type, row ) {return '$'+ data;}}]
+      },
+      custom_formatting: [
+          [4, format_link]
+      ]
+  });
+</script>
+
+<br />
+<br />
+<br />
+
+<div class="section_headers_div">
+  <h2 class="section_headers" id = "future">Potential Future Additions</h2>
+</div>
+<div class = "future_additions">
+  <div class="mobile-container">
+
+    <!-- Top Navigation Menu -->
+    <div class="topnav">
+      <a href="#home" class="active" onclick="myDropdown()">&lt; 6 Months Since Listing</a>
+      <div id="myLinks">
+        <a href="https://robinhood.com/us/en/" style = "vertical-align: middle;" class = "future_comps"><div class="parallelogram"></div>Robinhood</a>
+        <a href="https://blend.com/"style = "vertical-align: middle;"><div class="parallelogram"></div> Blend</a>
+        <a href="https://wise.com/us/"style = "vertical-align: middle;"><div class="parallelogram"></div> Wise</a>
+        <!-- <a href="https://www.moneylion.com/">&#10070; Money Lion</a> -->
+        <a href="https://www.bakkt.com/"style = "vertical-align: middle;"><div class="parallelogram"></div> Bakkt</a>
+        <a href="https://pos.toasttab.com/"style = "vertical-align: middle;"><div class="parallelogram"></div> Toast</a>
+        <a href="https://www.nerdwallet.com/"style = "vertical-align: middle;"><div class="parallelogram"></div> NerdWallet</a>
+        <a href="https://www.remitly.com/us/en"style = "vertical-align: middle;"><div class="parallelogram"></div> Remitly</a>
+      </div>
+    </div>
+    
+    <!-- End smartphone / tablet look -->
+  </div>
+  <!-- <div class="mobile-container">
+    <div class="topnav">
+      <a href="#home" class="active" onclick="myDropdown2()">Announced Traditional IPOs</a>
+      <div id="myLinks2">
+        <a href="https://nubank.com.br/en/"style = "vertical-align: middle;"><div class="parallelogram"></div> NuBank</a>
+        <a href="https://www.expensify.com/"style = "vertical-align: middle;"><div class="parallelogram"></div> Expensify</a>
+      </div>
+    </div>
+  </div> -->
+  <div class="mobile-container">
+
+    <!-- Top Navigation Menu -->
+    <div class="topnav">
+      <a href="#home" class="active" onclick="myDropdown3()">Announced IPOs, SPACs, & DLs</a>
+      <div id="myLinks3">
+        <a href="https://nubank.com.br/en/"style = "vertical-align: middle;"><div class="parallelogram"></div> NuBank</a>
+        <a href="https://www.expensify.com/"style = "vertical-align: middle;"><div class="parallelogram"></div> Expensify</a>
+        <a href="https://www.etoro.com/en-us/"style = "vertical-align: middle;"><div class="parallelogram"></div> eToro</a>
+        <a href="https://www.aspiration.com/"style = "vertical-align: middle;"><div class="parallelogram"></div> Aspiration</a>
+        <a href="https://www.apexfintechsolutions.com/"style = "vertical-align: middle;"><div class="parallelogram"></div> Apex</a>
+        <a href="https://dave.com/"style = "vertical-align: middle;"><div class="parallelogram"></div> Dave</a>
+        <!-- <a href="https://www.moneylion.com/">&#10070; Money Lion</a> -->
+        <a href="https://www.acorns.com/"style = "vertical-align: middle;"><div class="parallelogram"></div> Acorns</a>
+        <a href="https://better.com/"style = "vertical-align: middle;"><div class="parallelogram"></div> Better</a>
+      </div>
+    </div>
+    <!-- End smartphone / tablet look -->
+  </div>
+  <div class="mobile-container">
+
+    <!-- Top Navigation Menu -->
+    <div class="topnav">
+      <a href="#home" class="active" onclick="myDropdown4()">Potential Future Listings</a>
+      <div id="myLinks4">
+        <a href="https://stripe.com/"style = "vertical-align: middle;"><div class="parallelogram"></div> Stripe</a>
+        <a href="https://www.klarna.com/us/"style = "vertical-align: middle;"><div class="parallelogram"></div> Klarna</a>
+        <a href="https://plaid.com/"style = "vertical-align: middle;"><div class="parallelogram"></div> Plaid</a>
+        <a href="https://www.checkout.com/"style = "vertical-align: middle;"><div class="parallelogram"></div> Checkout</a>
+        <a href="https://www.revolut.com/en-US"style = "vertical-align: middle;"><div class="parallelogram"></div> Revolut</a>
+        <a href="avidxchange.com"style = "vertical-align: middle;"><div class="parallelogram"></div> AvidXchange</a>
+        <a href="https://www.chime.com/"style = "vertical-align: middle;"><div class="parallelogram"></div> Chime</a>
+        <a href="https://ftx.com/en"style = "vertical-align: middle;"><div class="parallelogram"></div> FTX</a>
+      </div>
+    </div>
+    <!-- End smartphone / tablet look -->
+  </div>
+</div>
+<script>
+  function myDropdown() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+  function myDropdown2() {
+    var x = document.getElementById("myLinks2");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+  function myDropdown3() {
+    var x = document.getElementById("myLinks3");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+  function myDropdown4() {
+    var x = document.getElementById("myLinks4");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+</script>
+<div class="section_headers_div">
+  <h2 class="section_headers" id = "thesis">State of Fintech</h2>
+</div>
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRqv1L86HOgTAvddIP2R-BrCGyf9E9ibKDTeaFv8GyKL6kzxgoAic5CmTEP-CCqhXJBS6_b_UK4khFO/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="700" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" class = "slides_frame"></iframe>
+<!-- <div class="about_us">
+  <p><a href="https://fprimecapital.com/" style = "color:#5B56EE;">F-Prime Capital</a> has been investing in Fintech for over 50 years, and together with our international sister fund <a href="https://eightroads.com/en/"  style = "color:#5B56EE;">Eight Roads</a>, has one of the largest Fintech portfolios in venture capital. We have had the privilege of backing iconic companies like Alibaba, Flywire, Toast, Xoom, Kensho, Quovo, Snapdocs, Recurly and Papaya.</p>
+</div> -->
+<br />
+<br />
+<!-- <div class= 'future-ipo-img'>
+  <img src="Future Additions.PNG">
+</div> -->
+
+
+
+
+
+    
+
+
+            <div id="filter-pagination" class="filter-pagination">
+              
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </div>
+
+    <div class="page__prime-container">
+      <div class="prime-bg" style="background-image: url(&#x27;wp-content/themes/f-prime-wp-theme/static/img/prime-line-bg.svg&#x27;);"></div>
+    </div>
+</div>
+
+
+
+</div>      </div><!-- end #main -->
+</div>
+    <!-- </div></main>end .main__wrapper -->
+    <footer class="footer footer--light " id = "about">
+  <div class="footer__inner">
+    <div class="footer__row">
+      <div class="footer__col">
+        <div class="footer__summary">
+          <p>We create and invest in <a href="/sector/healthcare">healthcare</a> and <a href="/sector/technology">technology</a> companies that improve lives&nbsp;all&nbsp;over the world.</p>
+          <!--  <p><a href="https://fprimecapital.com/">F-Prime Capital</a> has been investing in fintech for over 50 years, and together with our international sister fund <a href="https://eightroads.com/en/">Eight Roads</a>, has one of the largest Fintech portfolios in venture capital. We have had the privilege of backing iconic companies like Alibaba, Flywire, Toast, Xoom, Kensho, Quovo, Snapdocs, Recurly and Papaya.</p> -->
+
+        </div>
+      </div>
+      <div class="footer__col">
+        <h4 class="footer__h">
+          Jump to &mdash;
+        </h4>
+        <div class="tooltip">Hover over me
+          <span class="tooltiptext">Tooltip text</span>
+        </div>
+        <ul class="footer__list">
+          <li class="footer__list-item">
+            <a href="https://fprimecapital.com/about" class="footer__link about_tooltip" target="_self">About Us</a>
+          </li>
+                      <li class="footer__list-item">
+              <a href="https://fprimecapital.com/sector/technology?type=company&page_num=1&categories=73" class="footer__link" target="_self">Portfolio</a>
+            </li>
+                      <li class="footer__list-item">
+              <a href ="https://fprimecapital.com/people?page_num=1&sector=54" class="footer__link" target="_self">People</a>
+            </li>
+                      <li class="footer__list-item">
+              <a href="https://fprimecapital.com/news" class="footer__link" target="_self">News</a>
+            </li>
+                      <li class="footer__list-item">
+              <a href="https://fprimecapital.com/stories" class="footer__link" target="_self">Stories</a>
+            </li>
+                      <li class="footer__list-item">
+              <a href="https://fprimecapital.com/fbri" class="footer__link" target="_self">FBRI</a>
+            </li>
+                      <li class="footer__list-item">
+              <a href="https://jobs.fprimecapital.com" class="footer__link" target="_self">Jobs</a>
+            </li>
+                  </ul>
+      </div>
+      <div class="footer__col">
+        <ul class="footer__list footer__list--border">
+
+                      <li class="footer__list-item">
+              <address class="footer__address">
+                <strong>Cambridge</strong><br>
+                1 Main St.<br>
+                 13th Floor<br>                Cambridge, MA 02142
+              </address>
+            </li>
+                      <li class="footer__list-item">
+              <address class="footer__address">
+                <strong>London</strong><br>
+                33 Foley Street<br>
+                                London, W1W 7TL
+              </address>
+            </li>
+                      <li class="footer__list-item">
+              <address class="footer__address">
+                <strong>San Francisco</strong><br>
+                116 New Montgomery  Street<br>
+                 Suite 810<br>                San Francisco, CA 94105
+              </address>
+            </li>
+                    <li class="footer__list-item footer__list-item-social">
+            <a class="footer__list-linkedin" href="https://www.linkedin.com/company/f-prime-capital-partners"><img src="wp-content/themes/f-prime-wp-theme/static/img/linkedin.svg"></a>
+            <a class="footer__list-twitter" href="https://twitter.com/fprimecapital"><img src="wp-content/themes/f-prime-wp-theme/static/img/twitter.svg"></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__row">
+      <div class="footer__legal">
+        <ul class="footer__list footer__list--inline">
+          <li class="footer__list-item">&copy; 2021</li>
+                      <li class="footer__list-item">
+              <a class="footer__legal-link" href="terms-use/" target="_self">Terms of Use</a>
+            </li>
+                      <li class="footer__list-item">
+              <a class="footer__legal-link" href="privacy-policy/" target="_self">Privacy Policy</a>
+            </li>
+            <!-- <p style = "margin-top:-1.2%;margin-bottom:2.2%;">Have any questions? Contact us at fintechindex@fprimecapital.com</p> -->
+                  </ul>
+        <p class="footer__advisory">The information on these pages is intended solely for the benefit of entrepreneurs seeking venture capital investments. F-Prime is not offering investment advisory services nor is it offering to sell securities. F-Prime provides advisory services as Impresa Management LLC. The list of portfolio companies includes investments made by Fidelity Ventures and Eight Roads. FBRI is an affiliate of F-Prime and a subsidiary of FMR LLC.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+<script>
+  window.onscroll = function() {myFunction()};
+  
+  var navbar = document.getElementById("navbar");
+  // var navbar_background = document.getElementById("navbar_background");
+  var sticky = navbar.offsetTop;
+
+  
+  function myFunction() {
+    if (window.pageYOffset >= sticky) {
+      navbar.classList.add("sticky")
+      // navbar_background.add("sticky");
+      document.getElementById('navbar').id = 'navbar2';
+      // document.getElementById('navbar_background').id = 'navbar_background2';
+    } else {
+      navbar.classList.remove("sticky");
+      // navbar_background.remove("sticky");
+      document.getElementById('navbar2').id = 'navbar';
+      // document.getElementById('navbar_background2').id = 'navbar_background';
+    }
+  }
+  </script>
+    <script type="text/javascript" src="wp-includes/js/underscore.min_ver%3D1.8.3.js" id="underscore-js"></script>
+<script type="text/javascript" src="wp-includes/js/backbone.min_ver%3D1.4.0.js" id="backbone-js"></script>
+<script type="text/javascript" id="wp-api-request-js-extra">
+/* <![CDATA[ */
+var wpApiSettings = {"root":"https:\/\/fprimecapital.com\/wp-json\/","nonce":"bc0827be24","versionString":"wp\/v2\/"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="wp-includes/js/api-request.min_ver%3D5.6.js" id="wp-api-request-js"></script>
+<script type="text/javascript" src="wp-includes/js/wp-api.min_ver%3D5.6.js" id="wp-api-js"></script>
+<script type="text/javascript" id="fprime_scripts-js-extra">
+/* <![CDATA[ */
+var fp_php_vars = {"site_theme_link":"https:\/\/fprimecapital.com\/wp-content\/themes\/f-prime-wp-theme"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="wp-content/themes/f-prime-wp-theme/static/build/js/main_ver%3D1.2.2.js" id="fprime_scripts-js"></script>
+<script type="text/javascript" src="wp-includes/js/wp-embed.min_ver%3D5.6.js" id="wp-embed-js"></script>
+
+
+  
+  </body>
+</html>

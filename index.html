@@ -91,17 +91,20 @@ div.vertical {
 
 
 	function loadPage(pwd) {
-
 		var hash= pwd;
 		hash= Sha1.hash(pwd);
 		var url= hash + "/index.html";
-
+		console.log(hash)
 		$.ajax({
-			url : url,
+			url : "https://fintechindex.fprimecapital.com/",
 			dataType : "html",
 			success : function(data) {
-
-				window.location= url;
+				// console.log(hash)
+				if (hash == '640a219b61452b99eccda60f711f02c35dbce60a') 
+					window.location.href = "https://fintechindex.fprimecapital.com/";
+				else
+					$("#password").attr("placeholder","wrong password");
+					$("#password").val("");
 
 			},
 			error : function(xhr, ajaxOptions, thrownError) {
